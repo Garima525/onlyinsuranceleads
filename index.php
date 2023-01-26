@@ -2,6 +2,7 @@
 <script>
 		$(document).ready(function(){
 		$.getJSON("https://api.ipify.org?format=json", function(data) {
+			window.location.reload();
 			var ip = data.ip;
 			document.cookie = 'userIp='+ip;
 			});
