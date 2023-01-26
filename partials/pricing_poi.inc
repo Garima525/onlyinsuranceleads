@@ -14,7 +14,7 @@
 			</div>';
 		echo $tpl;
 	}
-	require_once($_SERVER['DOCUMENT_ROOT']. '/mailings/prospects.php');
+	require_once('../mailings/prospects.php');
 	if(!isset($agent['city'])) {
 		$agent['city'] = "Anywhere";
 		$agent['state'] = "USA";
