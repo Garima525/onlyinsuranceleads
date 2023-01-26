@@ -1,12 +1,3 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-		$(document).ready(function(){
-		$.getJSON("https://api.ipify.org?format=json", function(data) {
-			var ip = data.ip;
-			document.cookie = 'userIp='+ip;
-			});
-		});
-</script>
 <?php 
 
 //echo $ip = isset($_SERVER['HTTP_CLIENT_IP'])? $_SERVER['HTTP_CLIENT_IP']: (isset($_SERVER['HTTP_X_FORWARDED_FOR'])? $_SERVER['HTTP_X_FORWARDED_FOR']: $_SERVER['REMOTE_ADDR']);
