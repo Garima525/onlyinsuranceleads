@@ -1,0 +1,63 @@
+
+{% set templateClass = "postcardTemplate postcardLayoutSplitRight" %}
+{% extends "layout_base.twig" %}
+{% block content %}
+	<div class="grid layoutGrid">
+		{% if popup %}
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			<h1 class="front-tag">Front</h1>
+			{% endif %}
+
+				<div class="col-6 left">
+					<div class="postcard-14-heading">
+							Is Your Home <br> In The Right Hands?
+					</div>
+
+					<img src="/mailings/postcards/images/homeView.gif" style="width: 100%" />
+					{% block left %}
+						{% include 'call_now.twig' %}
+					{% endblock %}
+
+					<div class="postcard-14-small">
+						<p class="postcard-14-notice"> </p>
+					</div>
+
+				</div>
+				<div class="col-6 right">
+					<div class="grid companyContainer">
+						<div class="col-6">{% include 'logo.twig' %}</div>
+						{% if agent.purl %}
+							<div class="col-6">{% include 'company.twig' with {'nobreak': false} %}</div>
+						{% else %}
+							<div class="col-6">{% include 'company.twig' with {'nobreak': false} %}</div>
+						{% endif %}
+
+					</div>
+					{% include 'body_text_13.twig' %}
+					{% include 'quote_white.twig' %}
+				</div>
+				{% if popup %}
+			</div>
+			<div class="mySlides fade">
+			<h1 class="front-tag">Back</h1>
+				{% include 'postcard_back_new.twig' %}
+			</div>
+		</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		</div>
+
+		{% endif %}
+	</div>
+{% endblock %}

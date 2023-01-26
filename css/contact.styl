@@ -1,0 +1,250 @@
+#contact {
+  background: $contactBg;
+
+  .sectionTitle,
+  .sectionSubTitle {
+    color: $contactTextColor;
+    text-align: center;
+  }
+
+
+  a {
+    &:link {
+      color:$accentColor2;
+    }
+
+    font-size: 1.5em;
+  }
+
+  .phoneNumber a {
+    cursor: default;
+  }
+
+  .address {
+    color: rgba($contactTextColor, 0.7);
+
+    p {
+      font-size: 1em;
+      padding: 0;
+      margin:0 0 0.4em 0;
+      text-align: center !important;
+
+      &.hoursCaption {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+
+
+/* BEGIN Vanilla form styling */
+/* Styling for form fields container structure */
+.form-container {
+  display: block;
+  text-align: center;
+  margin-top: 3em;
+
+  .sectionSubTitle {
+    margin: 1em 0;
+  }
+}
+
+.form-container .column-50,
+.form-container .column-100 {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 1rem 1rem 1rem;
+}
+.form-container .column-100 {
+  width: 100%;
+}
+.form-container .column-50 {
+  vertical-align: top;
+  width: 50%;
+}
+.form-container .wrapped-label {
+  display: inline-block;
+  white-space: normal;
+  max-width: 90%;
+}
+.form-container .radio-set {
+  margin-bottom: 1em;
+}
+.form-container .radio-set label {
+  margin-left: 1em;
+}
+.form-container .left {
+  text-align: left;
+}
+.form-container .right {
+  text-align: right;
+}
+.form-container .center {
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .form-container .column-50 {
+    width: 100%;
+  }
+  .form-container label {
+    white-space: nowrap;
+  }
+}
+/* Styling form input elements and selects */
+.vanilla-form {
+  font-family: $bodyFont;
+  -webkit-text-size-adjust: 100%;
+  /* Prevent font scaling in landscape while allowing user zoom */
+
+}
+.vanilla-form a {
+  text-decoration: none;
+  color: #33a4fd;
+}
+.vanilla-form input,
+.vanilla-form textarea,
+.vanilla-form select {
+  font-family: $bodyFont;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  color: #2b2e36;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #cecece;
+  appearance: none;
+  border-radius: 2px;
+  box-shadow: 0 0 5px #dddddd;
+  -webkit-font-smoothing: antialiased !important;
+  transition: all 0.3s;
+}
+
+.vanilla-form input[type="submit"] {
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  shadow(1);
+  text-shadow: 0 0 1px rgba(darken($accentColor2, 40%), 0.8);
+  width: 100%;
+}
+
+.vanilla-form input:focus,
+.vanilla-form textarea:focus,
+.vanilla-form select:focus,
+.vanilla-form input:active,
+.vanilla-form textarea:active,
+.vanilla-form select:active {
+  outline: none;
+  border-color: $accentColor2;
+  box-shadow: 0 0 5px $accentColor2;
+}
+.vanilla-form input:last-child,
+.vanilla-form textarea:last-child,
+.vanilla-form select:last-child {
+  margin-bottom: 0;
+}
+.vanilla-form input.error,
+.vanilla-form textarea.error,
+.vanilla-form select.error {
+  border-color: #e2513f;
+  border-width: 2px;
+}
+.vanilla-form input[type="checkbox"],
+.vanilla-form input[type="radio"],
+.vanilla-form input[type="button"],
+.vanilla-form input[type="submit"],
+.vanilla-form input[type="reset"],
+.vanilla-form button {
+  display: inline-block;
+  width: auto;
+}
+.vanilla-form input[type="button"],
+.vanilla-form input[type="submit"],
+.vanilla-form input[type="reset"],
+.vanilla-form button {
+  color: #ffffff;
+  background-color: $accentColor2;
+  border-color: $accentColor2;
+  transition: all 0.3s;
+  width: 100%;
+
+  &:hover {
+    background-color: lighten($accentColor2, 10%);
+    shadow(2);
+  }
+
+  &:focus,
+  &:active {
+      background-color: darken($accentColor2, 10%);
+      border-color: darken($accentColor2, 10%);
+      shadow(1);
+  }
+
+  &.state-success {
+    background-color: #2fa94f;
+    border-color: #2fa94f;
+  }
+
+  &.state-error {
+    background-color: #e2513f;
+    border-color: #e2513f;
+  }
+
+  &.state-initial {
+
+  }
+
+}
+
+.vanilla-form textarea {
+  height: 200px;
+  resize: vertical;
+}
+.vanilla-form label.custom-select {
+  position: relative;
+  display: block;
+}
+.vanilla-form label.custom-select span {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 3.5rem;
+  pointer-events: none;
+  box-sizing: border-box;
+  background-color: #e8e8e8;
+  border: 1px solid #cecece;
+}
+
+.vanilla-form .notification-box {
+  display: block;
+  padding: 1rem;
+  margin: 0 1rem 1rem 1rem;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  color: #ffffff;
+  text-align: center;
+  transition: all 600ms;
+}
+.vanilla-form .notification-box.show-error,
+.vanilla-form .notification-box.show-success {
+  border: 1px solid #e2513f;
+  background-color: #e9796b;
+  max-height: 50vh;
+  overflow: auto;
+  opacity: 1;
+}
+.vanilla-form .notification-box.show-error {
+  border-color: #e2513f;
+  background-color: #e9796b;
+}
+.vanilla-form .notification-box.show-success {
+  border-color: #2fa94f;
+  background-color: #41ca65;
+}
+/* END Vanilla form styling */

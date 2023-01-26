@@ -1,0 +1,9 @@
+<div class="mailto">
+	<div>{{ prospect.first_name }} {{ prospect.last_name }}</div>
+	<div>{{ prospect.address }}</div>
+	{% if agent.purl %}
+		{{ agent.city }}, {{ agent.state }} {{ agent.zip }}
+	{% else %}
+		{{ address }}	
+	{% endif %}
+</div>

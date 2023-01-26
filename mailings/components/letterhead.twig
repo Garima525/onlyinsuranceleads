@@ -1,0 +1,20 @@
+<!--<div class="letterhead">
+	{% include 'company.twig' %}
+	<div>{{ agent.address }}</div>
+	<div>city{{ agent.city }}, {{ agent.state }} {{ agent.zip }}</div>
+	<div>Phone: {{ agent.phone }}</div>
+	<div>{{ agent.email }}</div>
+</div>-->
+
+<div class="letterhead">
+	{% include 'company.twig' %}
+	{% if agent.purl %}
+		<div>{{ agent.address }}</div>
+		<div>{{ agent.city }}, {{ agent.state }} {{ agent.zip }}</div>
+	{% else %}
+		<div>1234 Any Street</div>
+		<div>{{ address }}</div>
+	{% endif %}
+	<div>Phone: {{ agent.phone }}</div>
+	<div>{{ agent.email }}</div>
+</div>

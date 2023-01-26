@@ -1,0 +1,57 @@
+<div class="quoteContainer">
+	<div class="quote">
+		<div class="padWrap">
+			<div class="quoteHead">
+				<div class="address">
+					{{ prospect.address }}
+					{% if agent.purl %}
+						{{ agent.city }}, {{ agent.state }} {{ agent.zip }}
+					{% else %}
+						{{ address }}
+					{% endif %}
+				</div>
+				<div class="built">Built in 1990 with 2,412 square feet</div>
+				<div class="rec">Recommended Insurance Coverage</div>
+			</div>
+			<table cellspacing="0" cellpadding="0" border-collapse="collapse">
+				<tbody>
+					<tr>
+						<td>Dwelling Coverage</td>
+						<td>$200,000</td>
+					</tr>
+					<tr>
+						<td>Separate Structures</td>
+						<td>$20,000</td>
+					</tr>
+					<tr>
+						<td>Personal Property</td>
+						<td>$150,000</td>
+					</tr>
+					<tr>
+						<td>Loss of Use</td>
+						<td>Up to 12 Months</td>
+					</tr>
+					<tr>
+						<td>Liability</td>
+						<td>$300,000</td>
+					</tr>
+					<tr>
+						<td>Medical</td>
+						<td>$5,000</td>
+					</tr>
+					<tr>
+						<td>Identity Fraud</td>
+						<td>$30,000</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="quotePrice">
+			<div class="est">Our Estimated Annual Premium</div>
+			<div class="price"><span>$665.00</span></div>
+		</div>
+	</div>
+	<div class="disclaimerWrapper">
+		<p class="disclaimer">This is merely a proposal and not a policy of insurance or offer to insure. The company reserves the right to accept, reject or modify this proposal after investigation, review of the application and review of all other underwriting information. Your rate could vary based on differences in your home, your age and other factors.</p>
+	</div>
+</div>

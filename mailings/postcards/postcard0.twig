@@ -1,0 +1,11 @@
+{% set templateClass = "postcardTemplate postcardBack" %}
+{% extends "layout_base.twig" %}
+{% block content %}
+	<div class="companyContainer">
+		{% include 'logo.twig' with {'light': '-light'} %}
+		{% include 'letterhead.twig' %}
+	</div>
+	<div class="phoneContainer">
+		{{ agent.phone }}
+	</div>
+{% endblock %}

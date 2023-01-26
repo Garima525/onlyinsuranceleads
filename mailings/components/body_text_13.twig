@@ -1,0 +1,14 @@
+
+
+<div class="bodyText">
+	<h2>Dear {{ prospect.last_name }},</h2>
+	<p>Our records indicate that <span class="highlight">your home insurance is about to renew</span>. So we have prepared this <em>customized</em> annual premium estimate for you and encourage you to compare it to your current policy.</p>
+	{% if agent.disaster %}
+		<p>Because of the recent {{agent.disaster}}, insurance companies are already increasing premiums alarming rates. {{ "now"|date("Y") }} is the year to shop around your home insurance!
+		Don’t wait! Call us now at <span class="note">{{ agent.phone }}</span> and lock in a better rate today!</p>
+	{% else %}
+		<p>Insurance rates change daily, which probably means you're overpaying. {{ "now"|date("Y") }} is the year to shop your home insurance! Dont wait! Call us now at <span class="note">{{ agent.phone }}</span> and lock in a better rate today!</p>
+		<br>
+
+	{% endif %}
+</div>

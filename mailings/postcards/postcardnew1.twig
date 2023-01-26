@@ -1,0 +1,168 @@
+{% set templateClass = "postcardTemplate postcardLayoutSplitRight" %}
+{% extends "layout_base.twig" %}
+{% block content %}
+	<div class="layoutGrid postcard-va-grid postcard_new1">
+		{% if popup %}
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<h1 class="front-tag">Front</h1>
+				{% endif %}
+				<div class="pc_front_row">
+					<div class="pc_front_col_img pc_front_col">
+						<div class="wrap_pc1_img">
+							<figure>
+								<img class="postcard1_img" src="/mailings/postcards/images/homeView.gif"/>
+								<figcaption> </figcaption>
+							</figure>
+						</div>
+						<div class="postcard-1-prospect">
+							<h3>Dear Prospect,</h3>
+							<p>Our records indicate that
+								<span class="b-600 color-pri">YOUR HOME INSURANCE IS ABOUT TO RENEW.</span>
+								So we have prepared this customized annual premium estimate for you and encourage you to compare it to your current policy.</p>
+							<p>Insurance rates change daily, which probably means you’re overpaying. {{ year }} is the year to shop your home insurance! Don’t wait! Call us now at
+								<span class="b-600">{% if agent.purl %}{{ agent.phone }}{% else %}555-555-5555{% endif %}</span>
+								and lock in a better rate today!</p>
+						</div>
+						<div class="pc1_img_col_logo"><p>
+						{% if agent.purl %}
+								<span class="info_name">The {{ agent.shortname }} {% if not nobreak %}Insurance Agency {% else %} Insurance Agency {% endif %}</span>
+						{% else %}
+								<span class="info_name">The {{ agent.name }} {% if not nobreak %}Insurance Agency {% else %} Insurance Agency {% endif %}</span>
+						{% endif %}
+							{% include 'logo.twig' %}
+						</p></div>
+					</div>
+
+					<div class="pc_front_col_cov pc_front_col">
+						<div class="pc1_col_cov_top">
+							<h1>It’s Time to Renew Your<br>Home Insurance</h1>
+							<div class="wrap_pc1_cov_card">
+								<div class="pc1_cov_card">
+									<div class="pc1_cov_card_top">
+										<p class="b-600">{{ prospect.address }}
+										{% if agent.purl %}
+											{{ agent.city }}, {{ agent.state}} {{ agent.zip }}
+										{% else %}
+											{{ address }}
+										{% endif %}</p>
+										<p>Built in 1990 with 2,412 square feet</p>
+										<p class="b-600 color-sec">RECOMMENDED INSURANCE COVERAGE</p>
+									</div>
+									<div class="coverage_content">
+										<ul class="coverage_content_list">
+											<li class="cov_content_list_item">
+												<span>Dwelling Coverage</span>
+												<span>$365,000</span>
+											</li>
+											<li class="cov_content_list_item">
+												<span>Separate Structures</span>
+												<span>$36,500</span>
+											</li>
+											<li class="cov_content_list_item">
+												<span>Personal Property</span>
+												<span>$219,000</span>
+											</li>
+											<li class="cov_content_list_item">
+												<span>Loss of Use</span>
+												<span>Up to 12 Months</span>
+											</li>
+											<li class="cov_content_list_item">
+												<span>Liability</span>
+												<span>$300,000</span>
+											</li>
+											<li class="cov_content_list_item">
+												<span>Medical</span>
+												<span>$5,000</span>
+											</li>
+											<li class="cov_content_list_item">
+												<span>Identity Fraud</span>
+												<span>$50,000</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="pc1_price">
+								<h3 class="color-pri b-600">Your Estimated<br>Annual Premium</h3>
+							</div>
+							<div class="pc1_call_section">
+							<div class="pc1_amount"><h2 class="color-pri b-600">$665.00</h2></div>
+								<h3 class="b-600">Call us now at {% if agent.purl %}{{ agent.phone }}{% else %}555-555-5555{% endif %}<br>to lock in a better rate today!</h3>
+								<h4>
+									<a href="http://www.agencywebsite.com">{{ agent.website }}</a>
+								</h4>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+				{% if popup %}
+				</div>
+				<div class="mySlides fade ">
+					<h1 class="front-tag">Back</h1>
+					<div class="postcard-new1-backside">
+						<div class="pc1_back_row1">
+							<div class="pc1_back_row1_inner">
+								{% include 'logo.twig' %}
+							</div>
+						</div>
+						<div class="pc1_back_row2">
+							<div class="pc1_back_row2_col col_l">
+								<p>
+									{% if agent.purl %}
+										The {{ agent.shortname }} {% if not nobreak %}<br>Insurance Agency {% else %} Insurance Agency {% endif %}<br>
+										{{ agent.address }}</br>
+										{{ agent.city }}, {{ agent.state }} {{ agent.zip }}<br>
+										{{ agent.email }}
+							        {% else %}
+										The {{ agent.name }} {% if not nobreak %}<br>Insurance Agency {% else %} Insurance Agency {% endif %}<br>
+								        1234 Any St.<br>
+										{{ address }}<br>
+										{{ agent.email }}
+							        {% endif %}
+								</p>
+								<img src="/mailings/postcards/images/oil_qr_code.jpg" alt="postcard QR code">
+							</div>
+							<div class="pc1_back_row2_col col_r">
+								<h3 class="b-600 color-pri">Insurance rates change daily.<br>Stop overpaying!</h3>
+								<div class="pc1_back_call">
+									<h4>Call today to lock in a better rate!
+									<span>{% if agent.purl %}{{ agent.phone }}{% else %}555-555-5555{% endif %}</span></h4>
+								</div>
+								<div class="pc1_back_rec"></div>
+								<div class="pc1_back_address">
+								<p>
+								{{ prospect.first_name }} {{ prospect.last_name }}<br>
+								{{ prospect.address }}<br>
+								{% if agent.purl %}
+									{{ agent.city }}, {{ agent.state}} {{ agent.zip }}
+								{% else %}
+									{{ address }}
+								{% endif %}
+								</p>
+								</div>
+							</div>
+						</div>
+						<div class="pc1_back_row3">
+							<small>This is merely a proposal and not a policy of insurance or offer to insure. The company reserves the right
+to accept, reject or modify this proposal after investigation, review of the application and review of all other
+underwriting information. Your rate could vary based on differences in your home, your age and other factors</small>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+		</div>
+
+	{% endif %}
+</div>{% endblock %}

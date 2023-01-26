@@ -1,0 +1,71 @@
+@media (max-width: 787px) {
+	.call_b span.topText {
+    	font-size: 11px !important;
+	}
+	.call_b span.phone {
+		width: 280px !important;
+		top: 10px;
+		font-size: 1.8rem;
+	}
+	.call_b .red-bars {
+    top: 50px;
+    width: 100%;
+    }
+    .postcardTemplate.postcardLayoutSplitLeft .left.back .postcardBackAddress,
+	.postcardTemplate.postcardLayoutSplitRight .left.back .postcardBackAddress {
+	    width: 150px;
+	    font-size: .8rem !important;
+	}
+}
+@media (min-width: 788px) {
+	.disclaimerText {
+		top: 59vw !important;
+	}
+	.fancybox-content.custom-pop-up-postcard {
+		height: 30vh!important
+	}
+}
+
+.fancybox-content.custom-pop-up-postcard {
+    height: 65vh!important
+}
+
+@media (max-width: 947px) {
+	.postcard .fancybox-slide--iframe .fancybox-content {
+		height: 466px !important;
+	}
+}
+
+@media (min-width: 948px) and (max-width: 1532px) {
+	.postcard .fancybox-slide--iframe .fancybox-content {
+		height: 586px !important;
+	}
+}
+
+/* David's resolution is 1533px*/
+@media (min-width: 1533px) and (max-width: 1534px) {
+	.postcard .fancybox-slide--iframe .fancybox-content {
+		height: 466px !important;
+	}
+}
+
+/* Amanda's 2nd Monitor */
+@media (min-width: 1535px) and (max-width: 1599px) {
+	.postcard .fancybox-slide--iframe .fancybox-content {
+		height: 66vh !important;
+	}
+}
+
+/* Amanda's resolution is 1704px*/
+@media (min-width: 1600px) and (max-width: 1899px) {
+	.postcard .fancybox-slide--iframe .fancybox-content {
+		height: 566px !important;
+	}
+}
+
+/* Stephanie's resolution is 1916px*/
+@media (min-width: 1900px) {
+	.postcard .fancybox-slide--iframe .fancybox-content {
+		height: 656px !important;
+	}
+}

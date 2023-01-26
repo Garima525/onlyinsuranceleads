@@ -1,0 +1,11 @@
+[24-Jan-2023 02:02:25 UTC] PHP Notice:  Undefined index: type in /home/c24rwrjltlz8/public_html/utils/envelopeImage.php on line 9
+[24-Jan-2023 02:02:25 UTC] PHP Notice:  Undefined index: agent in /home/c24rwrjltlz8/public_html/utils/imageUtils.php on line 48
+[24-Jan-2023 02:02:25 UTC] PHP Notice:  Undefined variable: bg in /home/c24rwrjltlz8/public_html/utils/envelopeImage.php on line 35
+[24-Jan-2023 02:02:25 UTC] PHP Fatal error:  Uncaught Exception:  is not a valid image! in /home/c24rwrjltlz8/lib/kus/PHPImage.php:377
+Stack trace:
+#0 /home/c24rwrjltlz8/lib/kus/PHPImage.php(857): PHPImage->handleError(' is not a valid...')
+#1 /home/c24rwrjltlz8/public_html/utils/envelopeImage.php(35): PHPImage->draw(NULL)
+#2 /home/c24rwrjltlz8/public_html/utils/envelopeImage.php(16): createImage(NULL)
+#3 /home/c24rwrjltlz8/public_html/utils/envelopeImage.php(11): init(NULL)
+#4 {main}
+  thrown in /home/c24rwrjltlz8/lib/kus/PHPImage.php on line 377

@@ -1,0 +1,5 @@
+{% if agent.purl %}
+	<div class="company">The {{ agent.shortname }} {% if not nobreak %}<br>Insurance Agency {% else %} Insurance Agency {% endif %}</div>
+{% else %}
+	<div class="company">The {{ agent.name }} {% if not nobreak %}<br>Insurance Agency {% else %} Insurance Agency {% endif %}</div>
+{% endif %}

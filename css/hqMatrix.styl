@@ -1,0 +1,256 @@
+$imgWidth = 569px;
+$imgHeight = 328px;
+$screenWidth = 430px;
+$screenHeight = 268px;
+$screenOffsetY = 24px;
+$screenOffsetX = 75px;
+$screenInset = 20px;
+$topBarHeight = 80px;
+$screenFontsize = 9px;
+$screenHeadingSize = 11px;
+
+.hqMatrixContainer {
+	+above($medium){
+		padding-top: 2em;
+	}
+	
+	+below($large) {
+		transform: scale(0.85);
+		padding-right: 0;
+		padding-bottom: 2em;
+		position: relative;
+		left: -30px;
+	}
+	
+	+below($medium) {
+		transform: scale(1);
+		.hqMatrix {
+			margin: 2em auto 0 auto;
+		}
+	}
+}
+
+.ph {
+	color: #fff;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    visibility: hidden;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.hqMatrix {
+	background: url("../images/matrix/hqMatrix.svg") no-repeat top left;
+	box-sizing: border-box;
+	height: $imgHeight;
+	margin-top: 2rem;
+	position: relative;
+	width: $imgWidth;
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.screen {
+		font-size: $screenFontsize;
+		font-family: 'Verdana', sans-serif;
+		font-weight: bold;
+		position: absolute;
+		top: $screenOffsetY;
+		left: $screenOffsetX;
+		width: $screenWidth;
+		height: $screenHeight;
+		overflow: hidden;
+
+		.hidden {
+			//visibility: hidden;
+			opacity: 0;
+		}
+
+		.topBar {
+			background: #2F2347;
+			position: relative;
+
+			width: 100%;
+			height: $topBarHeight;
+
+			.hqLogo {
+				position: absolute;
+				left: 19px;
+				top: 19px;
+			}
+
+			.topInputs {
+				position: absolute;
+				right: 19px;
+				top: 15px;
+
+				.left {
+					padding-right: 15px;
+					width: 171px;
+
+					table {
+						width: 100%;
+
+						td {
+							vertical-align: middle;
+						}
+
+						.mockInputLabel {
+							padding-left: 15px;
+						}
+
+						.mockValueInput {
+							width: 50%;
+						}
+					}
+				}
+
+				.mockInputLabel {
+					color #fff;
+					font-size: 0.8em;
+					text-align: left;
+					margin-right: 10px;
+					text-transform: uppercase;
+					font-weight: normal;
+				}
+
+				.mockValueInput {
+					position: relative;
+					border-bottom: 1px solid #7E63B4;
+					color: #fff;
+					font-weight: normal;
+					min-width: 40px;
+					min-height: 1em;
+					padding-left: 3px;
+
+					.sub {
+						font-size: 75%;
+						position: absolute;
+						right: 0;
+						bottom: 2px;
+					}
+				}
+			}
+		}
+
+		.mockLabel {
+			font-size: 10px;
+			color: $accentColor;
+			display: inline-block;
+		}
+
+		.mockValue {
+			font-size: 10px;
+			font-weight: normal;
+			display: inline-block;
+			padding-left: 5px;
+		}
+
+		.mockTitle {
+			display: block;
+			font-size: $screenHeadingSize;
+			margin-bottom: 3px;
+		}
+
+		.mockContainer {
+			background: url("../images/matrix/houseImg.svg") no-repeat $screenInset 50%;
+			position: absolute;
+			top: $topBarHeight;
+			width: 245px;
+			height: $screenHeight - $topBarHeight;
+			padding: $screenInset;
+			padding-top: $screenInset + 3px;
+			overflow: hidden;
+
+			.mockLabel {
+				min-width: 110px;
+			}
+
+			.mockRow {
+				margin-bottom: 3px;
+			}
+		}
+
+		.dots {
+			.dot {
+				border-radius: 50%;
+				background: #DDD;
+				display: inline-block;
+				margin-top: 10px;
+
+				width: 5px;
+				height: 5px;
+
+				&.active {
+					background: $accentColor2;
+				}
+			}
+		}
+
+		.mockSidebar {
+			background: #eee;
+			width: 183px;
+			height: ($screenHeight - $topBarHeight) - 2px;
+			padding: $screenInset;
+			position: absolute;
+			left: 245px;
+
+			.sub {
+				font-size: 80%;
+			}
+
+			div {
+				margin-bottom: 5px;
+			}
+
+			.mockLabel {
+				margin-right: 7px;
+			}
+
+			.mockValue {
+				padding-left: 5px;
+				border-bottom: 1px solid #7E63B4;
+				width: 65px;
+			}
+
+			.ph {
+				color: #000;
+			}
+
+			.next {
+				color: $accentColor;
+				position:absolute;
+				right: 10px;
+				bottom: 5px;
+				border: 1px solid lighten($accentColor, 50%);
+				padding: 2px 5px;
+				border-radius: 2px;
+			}
+		}
+
+		.mockSuccess {
+			position: absolute;
+			top: $topBarHeight + 20px;
+			left: 120px;
+			z-index: 4;
+			visibility: hidden;
+			opacity: 0;
+		}
+	}
+}

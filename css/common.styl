@@ -1,0 +1,436 @@
+body {
+	font-family: $bodyFont;
+	font-size: $fontSize;
+	line-height: $lineHeight;
+}
+
+@font-face {
+    font-family: 'LCDNormal';
+    src: url('fonts/lcd-n___-webfont.eot');
+    src: url('fonts/lcd-n___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lcd-n___-webfont.woff') format('woff'),
+         url('fonts/lcd-n___-webfont.ttf') format('truetype'),
+         url('fonts/lcd-n___-webfont.svg#LCDNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $headingFont;
+}
+
+a {
+	text-decoration: none;
+	transition: color 0.3s;
+
+	&:link,
+	&:visited {
+		color: $linkColor;
+	}
+
+	&:hover {
+		color: $linkHoverColor;
+	}
+}
+
++below(1) {
+	section .columns {
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+}
+
+.row {
+	max-width: 1280px;
+}
+
+.mainMenu {
+	background: $mainMenuBg;
+	shadow(2);
+	box-sizing: border-box;
+	height: $mainMenuHeight;
+	position: fixed;
+	top: 0;
+	transition: all 0.3s;
+	width: 100%;
+	z-index: 100;
+
+	&:hover {
+		background: $mainMenuBgHover;
+		shadow(4);
+	}
+
+
+
+
+	.scrolled & {
+		shadow(2);
+		height: $mainMenuHeight * 0.9;
+		color: #fff;
+
+		&:hover {
+			height: $mainMenuHeight;
+		}
+	}
+
+
+	.logoContainer {
+		padding-top: 1.2em;
+
+		.headerLogo {
+			width: 128px;
+
+			+below($small) {
+				width: 120px;
+			}
+		}
+	}
+
+	.nav {
+		float: right;
+		font-size: 0.9em;
+		position: relative;
+		top: 23px;
+		padding-bottom: 1em;
+
+
+		.menuItem {
+			a {
+				border-bottom: 1px solid transparent;
+				color: $headerLinkColor;
+				padding-top: 0.15em;
+				padding-bottom: 0.2em;
+				transition: border 0.3s;
+
+				&:link,
+				&:visited {
+					color: $headerLinkVisited;
+				}
+
+				&:hover {
+					color: $headerLinkHover;
+					border-color: rgba(#fff, 0.6);
+				}
+			}
+
+			+below($menuBreak) {
+				display: none;
+			}
+		}
+
+		.getStarted {
+			button();
+		}
+
+		&.nav-open {
+			display: block;
+			width: 100%;
+			background: $mainMenuBg;
+			top: 0;
+			padding-top: 2rem;
+			shadow(2);
+
+			.menuItem {
+				display: block;
+				width: 100%;
+				text-align: center;
+				padding-bottom: 1.5rem;
+
+				a:hover {
+					border-color: transparent;
+				}
+
+				.getStarted {
+					width: 150px;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+
+	.menuIcon {
+		padding-top: 8px;
+		display: none;
+		position: absolute;
+		right: 15px;
+		top: 14px;
+
+		&:before {
+			display: block;
+			content: '';
+			background: url("../images/menu.svg") no-repeat 50% 50%;
+			width: 18px;
+			height: 20px;
+		}
+
+		&.nav-open {
+			&:before {
+				background: url("../images/close.svg") no-repeat 50% 50%;
+			}
+		}
+
+		+below($menuBreak) {
+			display: block;
+		}
+	}
+}
+
+.navContainer {
+	+below($mid) {
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 0;
+	}
+}
+
+.pageTitle,
+.pageSubTitle {
+	color: #fff;
+	margin-bottom: 10rem;
+	padding-top: 6rem;
+	text-shadow: 0px 7px 10px rgba(0,0,0,0.7);
+	font-size: 2.25rem;
+	font-weight: 900;
+	text-align: center;
+
+	+below($small) {
+		font-size: 1.8em;
+		padding-top:2em;
+		margin-bottom: 0;
+		padding-bottom: 2em;
+	}
+
+	+below($xsmall) {
+		font-size: 1.6em;
+	}
+
+	+mobile() {
+		font-size: 1.2em;
+	}
+}
+
+.pageSubTitle {
+	font-size: 1.6rem;
+
+	+below($small) {
+		font-size: 1.4rem;
+	}
+
+	+below($xsmall) {
+		font-size: 1.2rem;
+	}
+
+	+mobile() {
+		font-size: 1rem;
+	}
+}
+
+.section {
+	background: $sectionBg;
+
+	&.alt {
+		background: $sectionBgAlt;
+		border: 1px solid $sectionBorderColor;
+		border-left: 0;
+		border-right: 0;
+	}
+
+	p {
+		text-align: justify;
+	}
+
+	+above($large) {
+		padding: $sectionPaddingLarge 0;
+	}
+
+	+below($large) {
+		padding: $sectionPaddingMedium 0;
+	}
+
+	+below($mid) {
+		padding: $sectionPaddingSmall 0;
+	}
+
+
+	.columns {
+		+below($xsmall) {
+			padding-left: 0.5em;
+			padding-right: 0.5em;
+		}
+	}
+}
+
+
+.sectionTitle {
+	color: $sectionTitleColor;
+	font-size: 2rem;
+	font-weight: normal;
+	text-align: center;
+
+	+below($large) {
+		font-size: 1.8rem;
+	}
+
+	+below($mid) {
+		font-size: 1.5rem;
+	}
+
+	.columns & {
+		text-align: left;
+	}
+
+	& + .sectionSubTitle {
+		margin-top:0;
+	}
+
+	+mobile() {
+		margin-bottom: 0.6em !important;
+	}
+
+}
+
+.sectionSubTitle {
+	color: $sectionSubTitleColor;
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-bottom: 0.3em;
+	text-align: left;
+
+	+below($large) {
+		font-size: 1.2rem;
+	}
+
+	+below($mid) {
+		font-size: 1.1rem;
+	}
+
+	.columns & {
+		text-align: left;
+	}
+
+	+mobile() {
+		padding-right: 1em;
+		padding-left: 0;
+		margin-bottom: 0.8em !important;
+	}
+}
+
+.processDescription {
+	font-size: 0.9em;
+}
+
+.processTitle {
+	color: $sectionTitleColorAlt;
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 0;
+	text-align: center;
+}
+
+.footer {
+	background: darken($accentColor, 60%);
+	color: rgba(#fff, 0.6);
+	font-size: 0.8em;
+
+	.copyright {
+		padding: 1.5em;
+	}
+}
+
+
+.trusted {
+	background: $trustedBg;
+	border-top: 1px solid #DCDCDC
+	border-bottom: 1px solid #DCDCDC;
+	padding: 1.5em 1em;
+
+	.sectionTitle {
+		//color: rgba(#fff, 0.6);
+		font-size: 0.8em;
+		margin-bottom: 0;
+	}
+
+	.trustedBy {
+		background: url("../images/logos/logoSpriteAlt.png?1") no-repeat 50% 50%;
+		background-size: contain;
+		min-height: 100px;
+
+		+below($mid) {
+			background-size: 200%;
+			background-position: 0 50%;
+		}
+	}
+}
+
+.button {
+	button();
+	padding: 0.5em 1em;
+	shadow(1);
+}
+
+
+.material-switch > input[type="checkbox"] {
+    display: none;
+}
+
+.material-switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative;
+    width: 40px;
+}
+
+.material-switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: 3px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 35px;
+}
+.material-switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 20px;
+    left: -4px;
+    margin-top: 1px;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    width: 20px;
+}
+.material-switch > input[type="checkbox"]:checked + label::before {
+    background: $accentColor;
+    opacity: 0.5;
+}
+.material-switch > input[type="checkbox"]:checked + label::after {
+    background: $accentColor;
+    left: 20px;
+}
+
+.list-group {
+
+}
+
+.list-group-item {
+  margin:0;
+  padding: 0;
+}
+.pull-right {
+    float: right!important;
+}

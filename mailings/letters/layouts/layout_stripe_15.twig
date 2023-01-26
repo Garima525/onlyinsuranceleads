@@ -1,0 +1,51 @@
+
+
+{% set templateClass = "letterTemplate letterLayoutStripe letterFooterBlue" %}
+{% extends "layout_base.twig" %}
+{% block content %}
+<div class="grid-column-spaceBetween">
+	<div class="top">
+		{% include 'letter_top.twig' %}
+	</div>
+	<div class="middle">
+        <hr style="display: block;
+                    height: 1px;
+                    border: 0;
+                    border-top: 1px solid #2964ad;
+                    padding: 0;">
+
+    	<div style="background-color:#fff;
+                    color:white;
+                    padding:0%;
+                    padding-right:3%;">
+
+        		<div style="width:65%;
+                            display: inline-block;
+                            vertical-align:middle;
+                            font-size:2rem;
+                            font-weight:400" >
+            			{% block stripe %}
+            			{% endblock %}
+            	</div>
+
+        		<div style="width:34%;
+                            display: inline-block;
+                            padding:1%;">
+
+            			<img src="/mailings/postcards/images/homeView.gif" style="width: 100%; margin-top: 0%;" />
+            	</div>
+        </div>
+
+        <hr style="display: block;
+                    height: 1px;
+                    border: 0;
+                    border-top: 1px solid #2964ad;
+                    padding: 0;">
+
+		{% include 'quote_text_shuffle_white.twig' %}
+	</div>
+	<div class="bottom">
+		{% include 'call_now.twig' %}
+	</div>
+</div>
+{% endblock %}

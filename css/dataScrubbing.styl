@@ -1,0 +1,106 @@
+#dataScrubbing {
+
+	$dataWindowHeight = 400px;
+	$toolbarHeight = 40px;
+	$altRowBgColor = #F5F7FA;
+	$rowHeight = 40px;
+
+	.dataScrubbingContainer {
+		position: relative;
+		height: $dataWindowHeight;
+		//margin-bottom: 4rem;
+		overflow: hidden;
+		shadow(3);
+
+		.toolbar {
+			background-image: linear-gradient(-180deg, #EFEFEF 0%, #E8E8E8 100%);
+			border-radius: 3px 3px 0px 0px;
+			height: $toolbarHeight;
+			padding-left: 16px;
+			z-index: 5;
+			position: absolute;
+			width: 100%;
+
+			.circle {
+				width: 12px;
+				height: 12px;
+				border-radius: 12px;
+				background: #FF6159;
+				display: inline-block;
+				position: relative;
+				top: 8px;
+				margin-right: 8px;
+
+				&:nth-child(2) {
+					background:#FFBD2E;
+				}
+
+				&:nth-child(3) {
+					background:#28CE41;
+				}
+			}
+
+		}
+
+		.dataTable {
+
+			color: #373A3B;
+			font-size: 0.8em;
+			width: 100%;
+
+			tr {
+				background-color: #fff;
+				transition: all 0.3s;
+
+				&:nth-child(even) {
+					background-color: $altRowBgColor;
+				}
+
+				td {
+					height: $rowHeight;
+					padding-left: 1em;
+					padding-right: 1em;
+
+					&.address {
+						border-right: 1px solid #E4E9EB;
+						border-left: 1px solid #E4E9EB;
+					}
+
+					&.control {
+						width: 10%;
+
+						.toggle {
+							width: 20px;
+							height: 20px;
+							border-radius: 4px;
+							background-image: linear-gradient(-179deg, #FFFFFF 0%, #F5F5F5 100%);
+							border: 1px solid #E4E4E4;
+							text-align: center;
+							transition: background-color 0.3s;
+
+							.dash {
+								display:inline-block;
+								width: 5px;
+								height: 1px;
+								background: darken(#E4E4E4, 20%);
+								position: relative;
+								top: -6px;
+							}
+						}
+					}
+				}
+				&.remove {
+					td.control {
+						.toggle {
+							background-image: linear-gradient(0deg, #FFD3D3 0%, #FF9696 100%);
+							border-color: #FFABAB;
+							.dash {
+								background: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

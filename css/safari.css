@@ -1,0 +1,35 @@
+/* Postcard Templates */
+.postcard .fancybox-slide--iframe .fancybox-content {
+	height: 28vh !important;
+}
+
+@media (max-width:428px) {
+  .postcard .fancybox-slide--iframe .fancybox-content {
+	  height: 31vh !important;
+  }
+}
+
+/*
+@media only screen and (max-width:480px) and (orientation:portrait) {
+	.home .fancybox-slide--iframe .fancybox-content.custom-pop-up-postcard {
+		height: 384px !important;
+	}
+	.home.postcard .fancybox-slide--iframe .fancybox-content {
+        height: 384px !important;
+    }
+}
+
+@media only screen and (max-width: 375px) and (orientation:portrait) {
+	.home .fancybox-slide--iframe .fancybox-content.custom-pop-up-postcard {
+		height: 278px !important;
+	}
+	.home.postcard .fancybox-slide--iframe .fancybox-content {
+        height: 278px !important;
+    }
+}
+*/
+
+/* Letter Template */
+.fancybox-slide--iframe .fancybox-content {
+  height: 61vh !important;
+}

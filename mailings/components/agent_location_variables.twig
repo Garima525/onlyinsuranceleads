@@ -1,0 +1,22 @@
+<?php
+    $state = $agent['state'];
+    $disaster = false;
+    $flooding = array("MA","NJ","NY","VA");
+    $hurricanes = array("AL","FL","GA","LA","MS","NC","SC","TX");
+    $tornadoes = array("IL","IA","KS","MO","NE","OK","SD");
+    $wildfires = array("AK","AZ","CA","CO","ID","MT","NV","NM","OR","UT","WA");
+    $generic = array("AR","CT","DE","HI","IN","KY","ME","MD","MI","MN","NH","ND","OH","PA","RI","TN","TX","VT","WV","WI","WY");
+
+    if(in_array($state, $flooding)) {
+        $disaster = "flooding";
+    } else if(in_array($state, $hurricanes)) {
+        $disaster = "hurricanes";
+    } else if(in_array($state, $tornadoes)) {
+        $disaster = "tornadoes";
+    } else if(in_array($state, $wildfires)) {
+        $disaster = "wildfires";
+    } else {
+        $disaster = false;
+    }
+
+?>

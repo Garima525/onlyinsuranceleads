@@ -1,0 +1,94 @@
+.body-bg-img {
+    background-image: url('../img/login-background.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.no-border-radius {
+    border-radius: 0rem !important;
+}
+.form-check-input {
+    margin-top: .2rem !important;
+}
+.btn-login {
+    background-color: #2D5E6F;
+}
+
+.checkbox-container {
+    display: block;
+    padding-left: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+}
+/* On mouse-over, add a grey background color */
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked ~ .checkmark {
+    border: 1px solid white;
+    background-color: #3AABD5;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Show the checkmark when checked */
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.text-red {
+    color: red !important;
+}
+td.pre-dollar:before {
+    content: "$\00a0";
+    float: left;
+}
+#ratingTable td {
+    padding: 0.25rem !important;
+    font-size: 0.7rem !important;
+}
+#ratingTable th {
+    padding: 0.25rem !important;
+    font-size: 0.7rem !important;
+}
+.accordion .btn-link {
+	font-weight: 900;
+	text-transform: uppercase;
+}

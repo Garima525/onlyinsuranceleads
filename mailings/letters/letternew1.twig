@@ -1,0 +1,147 @@
+{% set templateClass = "letterTemplate letterLayoutStripe letterFooterBlue" %}
+{% extends "layout_base.twig" %}
+{% block content %}
+
+	<div class="letter-conv-font letter_conv_1">
+
+		<div class="card_top">
+			<div class="top_header_row">
+				<div class="top_header_colm header_colm_img">
+					<figure>
+						<img class="header_animation" src="/mailings/postcards/images/homeView.gif"/>
+					</figure>
+				</div>
+				<div class="top_header_colm header_colm_txt">
+					<div class="colm_txt_inr">
+						<p>
+							{{ prospect.first_name }} {{ prospect.last_name }}<br>
+							{{ prospect.address }}<br>
+							{% if agent.purl %}
+								{{ agent.city }}, {{ agent.state}} {{ agent.zip }}
+							{% else %}
+								{{ address }}
+							{% endif %}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card_middle">
+			<div class="wrap_middle_title">
+				<h2 class="middle_title">
+					It’s Time to Renew Your Home Insurance
+				</h2>
+			</div>
+			<div class="wrap_ltr_mdl_content">
+				<div class="mdl_cont_img_cap">
+					<small> </small>
+				</div>
+				<div class="mdl_split_detail">
+					<div class="wrap_ltr_mdl_bodyTxt">
+						<div class="ltr_mdl_bodyTxt">
+							<h3>Dear Prospect,</h3>
+							<p>Our records indicate that
+								<span class="b-600 color-pri">YOUR HOME INSURANCE IS ABOUT TO RENEW.</span>
+								So we have prepared this customized annual premium estimate for you and encourage you to compare it to your current policy.</p>
+							<p>Insurance rates change daily, which probably means you’re overpaying. {{ year }} is the year to shop your home insurance! Don’t wait! Call us now at
+								<span class="b-600">{% if agent.purl %}{{ agent.phone }}{% else %}555-555-5555{% endif %}</span>
+								and lock in a better rate today</p>
+						</div>
+						<div class="ltr_mdl_coverage">
+							<div class="coverage_top">
+								<h4>{{ prospect.address }}
+								{% if agent.purl %}
+									{{ agent.city }}, {{ agent.state}} {{ agent.zip }}
+								{% else %}
+									{{ address }}
+								{% endif %}
+								</h4>
+								<p class="color-pri">Built in 1990 with 2,412 square feet</p>
+								<h3 class="color-pri">Recommended Insurance Coverage</h3>
+							</div>
+							<div class="coverage_content">
+								<ul class="coverage_content_list">
+									<li class="cov_content_list_item">
+										<span>Dwelling Coverage</span>
+										<span>$365,000</span>
+									</li>
+									<li class="cov_content_list_item">
+										<span>Separate Structures</span>
+										<span>$36,500</span>
+									</li>
+									<li class="cov_content_list_item">
+										<span>Personal Property</span>
+										<span>$219,000</span>
+									</li>
+									<li class="cov_content_list_item">
+										<span>Loss of Use</span>
+										<span>Up to 12 Months</span>
+									</li>
+									<li class="cov_content_list_item">
+										<span>Liability</span>
+										<span>$300,000</span>
+									</li>
+									<li class="cov_content_list_item">
+										<span>Medical</span>
+										<span>$5,000</span>
+									</li>
+									<li class="cov_content_list_item">
+										<span>Identity Fraud</span>
+										<span>$50,000</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="coverage_totals_estimate">
+							<h2>Your Estimated<br>
+								Annual Premium</h2>
+							<h1>$665.00</h1>
+						</div>
+						<div class="coverage_below_note">
+							<small>
+								This is merely a proposal and not a policy of insurance or offer to insure. The company reserves the right to accept, reject or modify this proposal after investigation, review of the application and review of all other underwriting information. Your rate could vary based on differences in your home, your age and other factors.
+							</small>
+						</div>
+						<div class="divider bg-sec"></div>
+						<div class="mdl_content_site">
+							<h2 class="color-pri">{{ agent.website }}</h2>
+						</div>
+					</div>
+					<div class="mdl_split_detail_info">
+						<div class="split_detail_logo">
+							{% include 'logo.twig' %}
+						</div>
+						<div class="split_detail_info">
+						<p>
+						{% if agent.purl %}
+								<span class="info_name">The {{ agent.shortname }} {% if not nobreak %}<br>Insurance Agency {% else %} Insurance Agency {% endif %}</span>
+								<span class="info_addr">{{ agent.address }}</span>
+								<span class="info_state">{{ agent.city }}, {{ agent.state }} {{ agent.zip }}</span>
+								<span class="info_mail">{{ agent.email }}</span>
+						{% else %}
+								<span class="info_name">The {{ agent.name }} {% if not nobreak %}<br>Insurance Agency {% else %} Insurance Agency {% endif %}</span>
+								<span class="info_addr">1234 Any St.</span>
+								<span class="info_state">{{ address }}</span>
+								<span class="info_mail">{{ agent.email }}</span>
+						{% endif %}
+						</p>
+						</div>
+						{%
+                            set path = '/mailings/letters/images/agency_info_user.png'
+                        %}
+						<div class="split_detail_user_img">
+							<img src="{{ path }}">
+						</div>
+						<div class="split_detail_contact">
+							<h2>Call us now at
+								<br><span class="color-pri">{% if agent.purl %}{{ agent.phone }}{% else %}555-555-5555{% endif %}</span><br>to lock in a better<br>rate today!</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{# <div class="bottom bottom-conv">
+		            {% include 'call_noew_conv.twig' %}
+		        </div> #}
+	</div>
+{% endblock %}

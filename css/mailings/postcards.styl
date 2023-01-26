@@ -1,0 +1,293 @@
+$cardPadding = 5.5vw;
+
+.postcardTemplate {
+	font-size: 1.45vw !important;
+	line-height: 1.25;
+	overflow: hidden;
+
+	.right {
+		.bodyText {
+			p {
+				line-height: 1.25;
+			}
+		}
+	}
+
+	.letterContent {
+		width: 100vw;
+		height: ph(100vw);
+		background: #fff;
+		overflow: hidden;
+
+		.layoutGrid {
+			height: ph(100vw);
+		}
+	}
+
+	.quoteContainer {
+		.quote {
+			border-radius: 1vw;
+			margin-bottom: lh(2vw);
+			tr {
+				td {
+					padding: lh(0.7vw) 0;
+				}
+			}
+
+			.rec, .est {
+				font-size: 0.6rem;	
+			}
+
+			.price {
+				font-size: 1.2rem;
+				span {
+					padding: 3vw;
+				}	
+			}
+		}
+		.disclaimer {
+			display: none;
+		}
+	}
+
+	.left {
+		padding: $cardPadding ($cardPadding / 2) $cardPadding $cardPadding;
+		border-right: 1px solid darken($lightBlue, 10%);
+	}
+
+	.right {
+		padding: $cardPadding $cardPadding $cardPadding ($cardPadding / 2);
+	}
+
+
+	&.postcardLayoutSplitLeft {
+		.logo {
+			width: 40%;	
+		}
+
+		.left {
+			background-position: 50% 85%;
+			background-repeat: no-repeat;
+			.bodyText {
+				p {
+					font-size: 0.72rem;
+					line-height: 1.55rem;	
+				}
+			}
+		}
+		.right {
+			background: #F9FAFA;
+		}
+
+		.quoteContainer {
+			.quote {
+				background: #fff;
+			}	
+		}
+
+		.company {
+			margin: ph(2vw) 0;
+			font-size: 0.8em;	
+		}
+
+		.callNow {
+			color: $blue;
+			padding-top: ph(1vw);
+			font-size: 0.85rem;
+			font-style: italic;
+			font-weight: bold;
+			text-align: center;
+			.website {
+				font-size: 0.7rem;
+				margin-top: 0.5rem;	
+			}
+		}
+
+		&.postcard2 {
+			.left {
+				background-image: url("/mailings/letters/images/mailbox2.jpg");
+				background-size: 65%;
+			}	
+		}
+		&.postcard3 {
+			.left {
+				background-image: url("/mailings/letters/images/burningRates.jpg");
+				background-size: 65%;
+			}
+		}
+
+		&.postcard8 {
+			.left {
+				background-image: url("/mailings/letters/images/doormat.jpg");
+				background-size: 70%;
+			}	
+		}
+		&.postcard10 {
+			.left {
+				background-image: url("/mailings/letters/images/moneydrain.jpg");
+				background-size: 70%;
+			}	
+		}
+		&.postcard11 {
+			.left {
+				background-image: url("/mailings/letters/images/throwingaway.jpg");
+				background-size: 60%;
+			}	
+		}
+	}
+
+	&.postcardLayoutSplitRight {
+		.logo {
+			width: 65%;	
+		}
+
+		.company {
+			text-align: right;
+			font-style: italic;
+			font-size: 0.8rem;	
+		}
+
+		.bodyText {
+			p {
+				font-size: 0.7rem;
+				line-height: 1.5;
+			}
+		}
+		.left {
+			background-size: contain;
+			background-position: 50% 0;
+			background-repeat: no-repeat;
+			position: relative;
+
+			.callNow {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: ph(86vw);
+				background: $blue;
+				color: #fff;
+				text-align: center;
+				height: ph(15vw);
+				font-style: italic;
+				display: flex;
+				justify-content: center;
+				align-content: center;
+				flex-direction: column;
+				.website {
+					font-size: 0.7rem;
+					margin-top: 0.5rem;	
+				}
+			}
+		}
+
+		.quoteContainer {
+			.quote {
+				margin-top: ph(2vw);
+				tr {
+					td {
+						padding: ph(0.8vw) 0;
+					}
+				}
+			}	
+		}
+		&.postcard1 {
+			.left {
+				background-color: #fff;
+				background-image: url("/mailings/postcards/images/allneeds.png");
+			}
+		}
+		&.postcard4 {
+			.left {
+				background-color: #335fb1;
+				background-image: url("/mailings/postcards/images/risingRates.jpg");
+			}	
+		}
+		&.postcard5 {
+			.left {
+				background-color: #fff;
+				background-image: url("/mailings/postcards/images/rightHands.jpg");
+			}	
+		}
+		&.postcard6 {
+			.left {
+				background-image: url("/mailings/postcards/images/homeentry.jpg");	
+				background-size: cover;
+				background-position: top right;
+			}
+		}
+		&.postcard7 {
+			.left {
+				background-color: #002157;
+				background-image: url("/mailings/postcards/images/openUp.jpg");
+			}	
+		}
+
+		&.postcard9 {
+			.left {
+				background-color: #fff;
+				background-image: url("/mailings/postcards/images/timeToRenew.jpg");
+			}	
+		}
+
+		&.postcard12 {
+			.left {
+				background-color: #fff;
+				background-image: url("/mailings/postcards/images/breakingTheBank.jpg");
+			}
+			.bodyText {
+				p {
+					font-size: 0.9rem;
+				}	
+			}
+			.notes,
+			.savings {
+				margin: ph(5vw) 0;
+				font-weight: bold;
+				font-size: 0.85rem;
+				font-style: italic;
+				text-align: center;
+			}
+			.note {
+				margin-bottom: 1vw;
+			}
+
+			.savings {
+				font-size: 1rem;
+				color: $red;
+			}
+		}
+	}
+
+	&.postcardBack {
+		.letterContent {
+			background: #fff url("/mailings/postcards/images/postcardBack.svg") no-repeat top left;
+			background-size: cover;	
+		}
+
+		.companyContainer {
+			position: absolute;
+			top: $cardPadding;
+			left: $cardPadding;
+			color: #fff;
+			line-height: 1.5;
+			font-size: 0.6rem;
+
+			.logo {
+				width: 18vw;
+				margin-bottom: ph(2vw);
+			}
+			.company {
+				font-size: 0.9rem;	
+			}
+		}
+
+		.phoneContainer {
+			color: $darkBlue;
+			position: absolute;
+			right: 41vw;
+			top: ph(43vw);
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+	}
+}

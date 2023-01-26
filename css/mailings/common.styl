@@ -1,0 +1,127 @@
+@import 'mailingUtils';
+
+$textColor = rgba(#000000, 0.8);
+$blue = #2964AD;
+$lightBlue = #F9FBFC;
+$darkBlue = #002157;
+$gold = #CBAA3F;
+$red = #A42016;
+$letterBodyPadding = 7vw;
+ 
+ *, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: $textColor;
+	font-family: 'Merriweather', serif;
+	font-size: 1.75vw;
+	overflow: hidden;
+	user-select: none;
+}
+
+.template {
+	pointer-events: none;
+}
+
+.quote {
+	background: $lightBlue;
+	border: 1px solid rgba($blue, 0.3);
+	padding: 2vw;
+
+	.quoteHead {
+		text-align: center;
+		font-size: 0.8em;
+
+		.address {
+			font-weight: bold;
+		}
+	}
+
+	.rec,
+	.est {
+		color: $blue;
+		font-size: 1rem;
+		font-weight: bold;
+		margin: 3% 0;
+		text-align: center;
+	}
+
+	.est {
+		font-size: 0.85rem;
+	}
+
+	table {
+		width: 100%;
+		font-size: 0.9em;
+	}
+
+	tr {
+		td {
+			border-bottom: 1px solid rgba(#000000, 0.1);
+			font-weight: bold;
+			padding: lh(0.2vw) 0;
+			&:nth-child(even) {
+				text-align: right;	
+			}
+		}
+	}
+
+	.price {
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.5rem;
+		span {
+			padding: 4vw;
+			background: url("/images/templates/priceBg.svg") no-repeat 50% 50%;
+			background-size: contain;
+		}
+	}
+}
+
+.disclaimer {
+	font-size: 0.5em;
+	font-style: italic;
+	margin-top: 1%;
+}
+
+.highlight {
+	background-color: #f7ec28;
+	font-weight: bold;
+	padding: 0 0.3em;
+}
+
+.note {
+	color: $blue;	
+}
+
+em {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}
+
+.bodyText {
+	h2 {
+		font-size: 1.1em;
+		font-weight: bold;
+	}	
+	p {
+		text-align: justify;
+		margin-top: 1vw;
+		line-height: 1.6;
+	}
+}
+
+.mailto {
+	font-family: "Helvetica", "Verdana", sans-serif;	
+}

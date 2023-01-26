@@ -1,0 +1,32 @@
+{% set templateClass = "letterTemplate letterLayoutStripe letterFooterBlue" %}
+{% extends "layout_base.twig" %}
+{% block content %}
+	<div class="top">
+		{% include 'letter_top.twig' %}
+	</div>
+	<div class="middle">
+		<div class="stripe {{ stripe_color|default('white') }}">
+			Is your home insurance<br>
+			breaking the bank?
+		</div>
+		<div class="pad">
+			<div class="bodyText">
+				<h2>Dear {{ prospect.first_name }},</h2>
+				<p>Our records indicate that <span class="highlight">your home insurance is about to renew</span>.
+				So if you haven't checked your policy lateley, now's the time to compare rates and get something better.
+				Insurance rates change daily, which means you are probably overpaying! In addition please consider:</p>
+				<div class="notes">
+					<div class="note">Are you paying for unwanted protection?</div>
+					<div class="note">Are there gaps in your coverage that will end up costing you?</div>
+					<div class="note">Are you getting ALL the discounts you rightfully deserve?</div>
+				</div>
+				<p>As your neighborhood insurance agent, I can help. I'll get to know you first-hand so that I can tailor a policy that
+				fits your needs exactly and maximizes coverage for less. There's never been a better time to save!</p>
+				<div class="savings">Now you can save up to $580 per year!</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		{% include 'call_now.twig' %}
+	</div>
+{% endblock %}

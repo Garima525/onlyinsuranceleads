@@ -1,0 +1,47 @@
+{% set templateClass = "letterTemplate letterLayoutStripe letter1" %}
+{% extends "layout_base.twig" %}
+
+{% block content %}
+	<div class="top">
+		<div class="letter-top">
+			<div class="center">
+				{% include 'logo.twig' %}
+				{% include 'company.twig' with {'nobreak': true} %}
+			</div>
+		</div>
+		{% include 'mailto.twig' %}
+	</div>
+	<div class="middle">
+		<div class="pad main">
+			<div class="grid">
+				<div class="col-8">
+					{% include 'body_text.twig' %}
+					{% include 'quote.twig' %}
+				</div>
+				<div class="col-4 sidebar center">
+					<div class="row note">For <em>ALL</em> your<br> insurance needs</div>
+					<div class="row">
+						{% include 'company.twig' %}
+					</div>
+					<div class="row call">
+						<div class="note">Call or email us today</div>
+						<div class="phone">{{ agent.phone }}</div>
+						<div class="email">{{ agent.email }}</div>
+						<div class="note visit">Or visit us for an estimate at:</div>
+						<div class="website">{{ agent.website }}</div>
+					</div>
+					<div class="row">
+						<img src="/mailings/letters/images/sidebar1.svg" class="sidebarIcons">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="callNow letterFooter pad center">
+			<div class="addr">{{ agent.address }} {{ agent.city }}, {{ agent.state }} {{ agent.zip }}</div>
+			<div>Phone: {{ agent.phone }} {% if agent.fax %} | Fax: {{ agent.fax }} {% endif %}</div>
+			<div>{{ agent.website }}</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,0 +1,232 @@
+[16-Dec-2019 19:48:15 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard14.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard14.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard14.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard14.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[16-Dec-2019 19:48:15 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard13.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard13.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard13.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard13.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[16-Dec-2019 19:48:15 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard13.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard13.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard13.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard13.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[17-Dec-2019 03:06:55 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard13.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard13.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard13.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard13.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[17-Dec-2019 03:06:55 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard15.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard15.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard15.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard15.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[17-Dec-2019 03:06:55 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard14.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard14.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard14.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard14.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[17-Dec-2019 03:06:55 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard13.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard13.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard13.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard13.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[18-Dec-2019 05:20:24 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Syntax: A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag? in /home/onlyinsurance/public_html/dev/html/mailings/letters/letter13.twig:1
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(341): Twig_Parser->filterBodyNodes(Object(Twig_Node_Text))
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(83): Twig_Parser->filterBodyNodes(Object(Twig_Node))
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#3 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#4 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(289): Twig_E in /home/onlyinsurance/public_html/dev/html/mailings/letters/letter13.twig on line 1
+[18-Dec-2019 05:20:26 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Syntax: A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag? in /home/onlyinsurance/public_html/dev/html/mailings/letters/letter13.twig:1
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(341): Twig_Parser->filterBodyNodes(Object(Twig_Node_Text))
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(83): Twig_Parser->filterBodyNodes(Object(Twig_Node))
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#3 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#4 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(289): Twig_E in /home/onlyinsurance/public_html/dev/html/mailings/letters/letter13.twig on line 1
+[18-Dec-2019 05:20:26 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Syntax: A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag? in /home/onlyinsurance/public_html/dev/html/mailings/letters/letter13.twig:1
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(341): Twig_Parser->filterBodyNodes(Object(Twig_Node_Text))
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(83): Twig_Parser->filterBodyNodes(Object(Twig_Node))
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#3 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#4 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(289): Twig_E in /home/onlyinsurance/public_html/dev/html/mailings/letters/letter13.twig on line 1
+[18-Dec-2019 06:37:17 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Syntax: The block 'stripe' has already been defined line 12. in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig:16
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/TokenParser/Block.php(38): Twig_Parser->subparse(Array, true)
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#3 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(81): Twig_Parser->subparse(NULL, false)
+#4 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 /home/onlyinsurance/public_html/dev/vendor/twig/twig in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig on line 16
+[18-Dec-2019 06:37:19 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Syntax: The block 'stripe' has already been defined line 12. in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig:16
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/TokenParser/Block.php(38): Twig_Parser->subparse(Array, true)
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#3 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(81): Twig_Parser->subparse(NULL, false)
+#4 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 /home/onlyinsurance/public_html/dev/vendor/twig/twig in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig on line 16
+[18-Dec-2019 06:37:19 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Syntax: The block 'stripe' has already been defined line 12. in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig:16
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/TokenParser/Block.php(38): Twig_Parser->subparse(Array, true)
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#3 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(81): Twig_Parser->subparse(NULL, false)
+#4 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 /home/onlyinsurance/public_html/dev/vendor/twig/twig in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig on line 16
+[18-Dec-2019 06:37:33 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Syntax: The block 'stripe' has already been defined line 12. in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig:16
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/TokenParser/Block.php(38): Twig_Parser->subparse(Array, true)
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#3 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(81): Twig_Parser->subparse(NULL, false)
+#4 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 /home/onlyinsurance/public_html/dev/vendor/twig/twig in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig on line 16
+[18-Dec-2019 06:37:34 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Syntax: The block 'stripe' has already been defined line 12. in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig:16
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/TokenParser/Block.php(38): Twig_Parser->subparse(Array, true)
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#3 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(81): Twig_Parser->subparse(NULL, false)
+#4 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 /home/onlyinsurance/public_html/dev/vendor/twig/twig in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig on line 16
+[18-Dec-2019 06:37:57 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Syntax: The block 'stripe' has already been defined line 12. in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig:16
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/TokenParser/Block.php(38): Twig_Parser->subparse(Array, true)
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#3 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(81): Twig_Parser->subparse(NULL, false)
+#4 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 /home/onlyinsurance/public_html/dev/vendor/twig/twig in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig on line 16
+[18-Dec-2019 06:37:58 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Syntax: The block 'stripe' has already been defined line 12. in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig:16
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/TokenParser/Block.php(38): Twig_Parser->subparse(Array, true)
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#3 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(81): Twig_Parser->subparse(NULL, false)
+#4 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 /home/onlyinsurance/public_html/dev/vendor/twig/twig in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig on line 16
+[18-Dec-2019 06:37:58 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Syntax: The block 'stripe' has already been defined line 12. in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig:16
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/TokenParser/Block.php(38): Twig_Parser->subparse(Array, true)
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(168): Twig_TokenParser_Block->parse(Object(Twig_Token))
+#3 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(81): Twig_Parser->subparse(NULL, false)
+#4 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#5 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#6 /home/onlyinsurance/public_html/dev/vendor/twig/twig in /home/onlyinsurance/public_html/dev/html/mailings/letters/layouts/layout_stripe_note_16.twig on line 16
+[18-Dec-2019 06:44:10 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Syntax: A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag? in /home/onlyinsurance/public_html/dev/html/mailings/letters/letter16.twig:1
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(341): Twig_Parser->filterBodyNodes(Object(Twig_Node_Text))
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(83): Twig_Parser->filterBodyNodes(Object(Twig_Node))
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#3 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#4 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(289): Twig_E in /home/onlyinsurance/public_html/dev/html/mailings/letters/letter16.twig on line 1
+[18-Dec-2019 06:44:11 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Syntax: A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag? in /home/onlyinsurance/public_html/dev/html/mailings/letters/letter16.twig:1
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(341): Twig_Parser->filterBodyNodes(Object(Twig_Node_Text))
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Parser.php(83): Twig_Parser->filterBodyNodes(Object(Twig_Node))
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(533): Twig_Parser->parse(Object(Twig_TokenStream))
+#3 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(565): Twig_Environment->parse(Object(Twig_TokenStream))
+#4 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(368): Twig_Environment->compileSource(Object(Twig_Source))
+#5 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(289): Twig_E in /home/onlyinsurance/public_html/dev/html/mailings/letters/letter16.twig on line 1
+[18-Dec-2019 07:16:55 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard16.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard16.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard16.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard16.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[18-Dec-2019 07:16:56 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard16.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard16.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard16.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard16.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[18-Dec-2019 07:17:15 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard16.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard16.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard16.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard16.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[18-Dec-2019 07:17:15 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard16.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard16.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard16.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard16.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[18-Dec-2019 07:17:16 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard16.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard16.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard16.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard16.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[18-Dec-2019 07:17:16 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard16.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard16.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard16.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard16.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[18-Dec-2019 07:17:50 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard16.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard16.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard16.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard16.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[18-Dec-2019 07:17:50 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard16.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard16.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard16.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard16.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[18-Dec-2019 07:18:37 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard16.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard16.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard16.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard16.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[18-Dec-2019 07:18:37 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard16.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard16.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard16.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard16.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[18-Dec-2019 07:18:42 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard16.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard16.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard16.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard16.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[18-Dec-2019 07:18:44 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard16.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard16.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard16.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard16.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226
+[18-Dec-2019 07:23:53 America/Los_Angeles] PHP Fatal error:  Uncaught Twig_Error_Loader: Unable to find template "postcard16.twig" (looked into: /home/onlyinsurance/public_html/dev/html/mailings, /home/onlyinsurance/public_html/dev/html/mailings//components, /home/onlyinsurance/public_html/dev/html/mailings//letters/layouts, /home/onlyinsurance/public_html/dev/html/mailings//letters, /home/onlyinsurance/public_html/dev/html/mailings//postcards, /home/onlyinsurance/public_html/dev/html/mailings//postcards/layouts). in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php:226
+Stack trace:
+#0 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php(143): Twig_Loader_Filesystem->findTemplate('postcard16.twig')
+#1 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(270): Twig_Loader_Filesystem->getCacheKey('postcard16.twig')
+#2 /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Environment.php(350): Twig_Environment->getTemplateClass('postcard16.twig')
+#3 /home/onlyinsurance/public in /home/onlyinsurance/public_html/dev/vendor/twig/twig/lib/Twig/Loader/Filesystem.php on line 226

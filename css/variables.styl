@@ -1,0 +1,145 @@
+$primaryColor = #00B5DF;
+$accentColor = #50328A; //Purple
+$accentColor2 = #00B5DF; //Blue
+$accentBright = #00B4E1;
+
+$fontSize = 16px;
+$lineHeight = 1.7;
+$lh = 1em;
+
+$bodyFont = 'Open Sans', sans-serif;
+$headingFont = 'Lato', sans-serif;
+
+$linkColor = $accentColor;
+$linkHoverColor = lighten($accentColor, 30%);
+$bodyTextColor = #6F6F6F;
+$darkBg = $accentColor;
+$lightBorderColor = #C4C2D1;
+$darkBorderColor = $primaryColor;
+$hoverBg = rgba($accentColor2, 0.1);
+$activeBg = darken($hoverBg, 2%);
+
+
+$mainMenuBg = darken($accentColor, 50%);
+$mainMenuBgHover = darken($accentColor, 30%);
+$mainMenuBorderColor = #E4E5E9;
+$mainMenuHeight = 76px;
+
+$headerLinkColor = #fff;
+$headerLinkVisited = $headerLinkColor;
+$headerLinkHover = lighten($headerLinkColor, 20%);
+
+
+
+$sectionBg = #fff;
+$sectionBgAlt = #F7FDFE;
+$sectionBorderColor = #E1EAEB;
+$sectionTitleColor = #444444;
+$sectionSubTitleColor = #5A5A5A;
+$sectionTitleColorAlt = #303030;
+
+$sectionPaddingLarge = 6em;
+$sectionPaddingMedium = 4em;
+$sectionPaddingSmall = 2em;
+
+$pageHeaderHeight = 728px;
+
+$trustedBg = darken($accentColor, 35%);
+$trustedBg = $sectionBgAlt;
+$trustedBg = linear-gradient(-180deg, #FFFFFF 0%, rgba(#FBFBFB,0.9) 100%);
+
+
+
+$quoteBg = $accentColor2;
+$quoteFont = 'Georgia', serif;
+$quoteTextColor = #fff;
+
+
+$contactBg = darken($accentColor, 30%);
+$contactTextColor = #fff;
+
+$packageBg = #fff;
+$toggleBg = #fff;
+$packagePriceBg = rgba($accentColor2, 0.1);
+
+$packageNameColor = $sectionTitleColor;
+
+
+$selectedColor = $accentColor;
+$selectedTextColor = #fff;
+
+$pricingLetterWidth = 329px;
+$pricingLetterHeight = 390px;
+
+$pricingEnvWidth = 318px;
+$pricingEnvHeight = 154px;
+
+
+scale = 0 640px 1024px 1440px 1920px;
+
+$xsmall = 481px;
+$small = 641px;
+$mid = 800px;
+$menuBreak = 880px;
+$medium = 1025px;
+$large = 1441px;
+$xlarge = 1920px;
+
+$letterLarge = 95%;
+$letterMedium = 95%;
+$letterSmall = 270px;
+$envelopeOffset = 20px;
+
+
+.small-hide {
+    +below($small) {
+        display: none !important;
+    }
+}
+
+.xsmall-hide {
+    +below($xsmall) {
+        display none !important;
+    }
+}
+
+shadow($level = 1){
+    if ($level == 1) {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    if ($level == 2) {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    if ($level == 3) {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    if ($level == 4) {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    if ($level == 5) {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+}
+
+
+button() {
+    background:$primaryColor;
+    border-radius:16px;
+    color:#fff !important;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 0.2em;
+    transition: all 0.3s;
+    shadow(0);
+
+    &:hover {
+        cursor: pointer;
+        border-bottom-color: transparent;
+        background: lighten($accentColor2, 10%);
+        shadow(2);
+    }
+
+    &:active {
+        shadow(1);
+    }
+}

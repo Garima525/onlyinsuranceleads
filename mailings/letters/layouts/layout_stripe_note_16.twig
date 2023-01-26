@@ -1,0 +1,27 @@
+
+
+{% set templateClass = "letterTemplate letterLayoutStripe letterFooterBlue" %}
+{% extends "layout_base.twig" %}
+{% block content %}
+<div class="grid-column-spaceBetween">
+	<div class="top">
+		{% include 'letter_top.twig' %}
+	</div>
+	<div class="middle">
+    	<img class="letter16-img" src="/mailings/postcards/images/homeView.gif" />
+		{# <img src="/mailings/postcards/images/homeView.gif" style="width: 100%; margin-top: 0%;" /> #}
+
+		<div class="stripe {{ stripe_color|default('blue') }}">
+			{% block stripe %}
+			{% endblock %}
+		</div>
+        <small class="letter-16-small"> </small>
+
+
+		{% include 'quote_text_split_16.twig' %}
+	</div>
+	<div class="bottom">
+		{% include 'call_now.twig' %}
+	</div>
+</div>
+{% endblock %}

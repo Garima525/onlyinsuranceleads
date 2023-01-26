@@ -1,0 +1,132 @@
+.letterFrame {
+	transition: all 0.6s;
+	background: #fff;
+	width: 425px;
+	height: lh(@width);
+	border: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	box-shadow:2px 2px 25px rgba(#000000, 0.25);
+	
+	&[src*="letter"] {
+	}
+
+	&[src*="postcard"] {
+		width: 425px;
+		height: ph(@width);
+	}
+}
+
+.letterSlide {
+	position: relative;
+
+	.slideMask {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: none;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+		z-index: 500;
+		&:hover {
+			.letterPreviewToggle {
+				opacity: 1;
+			}
+		}
+
+		.letterPreviewToggle {
+			opacity: 0;
+			transition: all 0.3s;
+			display: block;
+			background: rgba(0,0,0,0.1) url('../images/zoom.svg') no-repeat 50% 50%;
+			width: 70px;
+			height: 70px;
+			border-radius: 10px;
+			cursor: pointer;
+			
+
+			&:hover {
+				shadow(1);
+				background-color: rgba(#E2E2E2,0.9);
+			}
+		}
+	}
+}
+
+
+.fancybox-slide--iframe {
+	padding-top: 0;
+	.fancybox-content {
+		background: transparent;
+		width: (100vh * 0.66);
+		height: 80vh;
+		margin: 0 auto;
+	}
+}
+
+.postcard .fancybox-slide--iframe {
+	.fancybox-content {
+		width: 99vh;
+		height: 33vh;
+
+	}	
+}
+
+.button-group {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	
+	
+	
+	.btn {
+		
+		background: #fff;
+		padding:1rem 1.5rem;
+		margin:0;
+		vertical-align:middle;
+		border: solid 1px $primaryColor;
+		font-size: 0.8rem;
+		border-radius: 1rem;
+		cursor:pointer;
+		transition: all 0.4s ease-out;
+		text-align: center;
+		min-width: 100px;
+		width: 150px;
+	}
+
+	.btn-switcher:first-child{
+		border-radius:4px 0 0 4px;
+	}
+
+	.btn-switcher:last-child{
+		border-radius:0 4px 4px 0;
+		border-right: solid 1px $primaryColor; 
+	}
+
+	.btn-switcher:hover {
+		//background:rgba($primaryColor, 0.4);
+		box-shadow: 0 4px 40px rgba(0,0,0,0.2);
+	}
+
+
+	.btn-switcher:active {
+		box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+	}
+
+	.btn-switcher.selected{
+		background: $primaryColor;
+		border-color: $primaryColor;
+		color:#fff;
+		cursor:default;
+		box-shadow:none;
+	}
+}

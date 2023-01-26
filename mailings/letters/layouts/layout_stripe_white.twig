@@ -1,0 +1,20 @@
+{% set templateClass = "letterTemplate letterLayoutStripe letterFooterBlue" %}
+{% extends "layout_base.twig" %}
+{% block content %}
+<div class="grid-column-spaceBetween">
+	<div class="top">
+		{% include 'letter_top.twig' %}
+	</div>
+	<div class="middle">
+		<div class="stripe {{ stripe_color|default('blue') }}">
+			{% block stripe %}
+            {% endblock %}
+		</div>
+        
+		{% include 'quote_text_split_white.twig' %}
+	</div>
+	<div class="bottom">
+		{% include 'call_now.twig' %}
+	</div>
+</div>
+{% endblock %}

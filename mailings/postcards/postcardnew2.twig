@@ -1,0 +1,149 @@
+{% set templateClass = "postcardTemplate postcardLayoutSplitRight" %}
+{% extends "layout_base.twig" %}
+{% block content %}
+	<div class="layoutGrid postcard-va-grid postcard_new3">
+		{% if popup %}
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<h1 class="front-tag">Front</h1>
+				{% endif %}
+				<img class="postcard1_img" src="/mailings/postcards/images/homeView.gif" style="width: 50%; height: 49%;"/>
+				<img id="side-img-circle" src="/mailings/postcards/images/layout2-front-asset6-new.svg" alt="left-side-circle-img" width="100%" style="position:absolute;left:0;right:0;">
+				<div class="pc2_left_container">
+					<p id="postcardnew2-para1"> </p>
+					<h1 id="postcardnew2-h1">It’s Time to<br>Renew Your<br>Home Insurance</h1>
+					<h3 id="postcardnew2-h3">Call us now at {% if agent.purl %}{{ agent.phone }}{% else %}555-555-5555{% endif %}<br>to lock in a better rate today!</h3>
+					<a id="postcardnew2-link">{{ agent.website }}</a>
+					<div id="postcardnew2-rightpara">
+						<h3>Dear Prospect,</h3>
+						<p>Our records indicate that
+							<span class="b-600 ">YOUR HOME INSURANCE IS ABOUT TO RENEW.</span>
+							So we have prepared this customized annual premium estimate for you and encourage you to compare it to your current policy.</p>
+						<p>Insurance rates change daily, which probably means you’re overpaying. {{ year }} is the year to shop your home insurance! Don’t wait! Call us now at
+							<span class="b-600">{% if agent.purl %}{{ agent.phone }}{% else %}555-555-5555{% endif %}</span> and lock in a better rate today</p>
+					</div>
+				</div>
+				<div class="pc2_right_container">
+						<p class="pc2_lead1">
+						{{ prospect.address }}
+						{% if agent.purl %}
+							{{ agent.city }}, {{ agent.state}} {{ agent.zip }}
+						{% else %}
+							{{ address }}
+						{% endif %}</p>
+						<p class="pc2_lead2">Built in 1990 with 2,412 square feet</p>
+						<p class="pc2_lead3" style="">
+					RECOMMENDED INSURANCE COVERAGE</p>
+
+						<ul class="coverage_content_list" style="">
+							<li class="cov_content_list_item">
+								<span>Dwelling Coverage</span>
+								<span>$365,000</span>
+							</li>
+
+							<li class="cov_content_list_item">
+								<span>Separate Structures</span>
+								<span>$36,500</span>
+							</li>
+
+							<li class="cov_content_list_item">
+								<span>Personal Property</span>
+								<span>$219,000</span>
+							</li>
+
+							<li class="cov_content_list_item">
+								<span>Loss of Use</span>
+								<span>Up to 12 Months</span>
+							</liclass="cov_content_list_item">
+
+							<li class="cov_content_list_item">
+								<span>Liability</span>
+								<span style="padding-left: 14%;">$300,000</span>
+							</li>
+
+							<li class="cov_content_list_item">
+								<span>Medical</span>
+								<span style="padding-left: 16%;">$5,000</span>
+							</li>
+
+							<li class="cov_content_list_item">
+								<span>Identity Fraud</span>
+								<span style="padding-left: 7%;">$50,000</span>
+							</li>
+						</ul>
+						<h1 class="call_to_action">Your Estimated<br>Annual Premium</h1>
+						<h1 class="cta_pricing">$665.00</h1>
+						</div>
+				{% if popup %}
+				</div>
+				<div class="mySlides fade ">
+					<h1 class="front-tag">Back</h1>
+					{# <div class="postcard-new3-backside"> #}
+
+
+
+		<img id="side-img-circle" src="/mailings/postcards/images/layout2-back-asset1.svg" alt="left-side-circle-img" style="width:56%;">
+				<h2 id="in-imeage-h2" style="position: absolute;top: 63%;color: white;font-size: 1.3rem;left: 5%;font-weight: bold;">CALL TODAY TO LOCK IN</h2>
+				<h2 id="in-imeage-h2" style="position: absolute;top: 68%;color: white;font-size: 1.3rem;left: 8%;font-weight: bold;">A BETTER RATE!</h2>
+				<h2 style="position:absolute;bottom: 21%;left: 6%;color: white;font-size: 2rem;font-weight: bold;">{% if agent.purl %}{{ agent.phone }}{% else %}555-555-5555{% endif %}</h2>
+				<p style="position: absolute;bottom: 7%;left: 3%;font-size: 0.5rem;width: 31%;line-height: .8rem;color: #aaa;">
+					This is merely a proposal and not a policy of insurance or offer to insure. The company reserves the right
+					to accept, reject or modify this proposal after investigation, review of the application and review of all other
+					underwriting information. Your rate could vary based on differences in your home, your age and other factors.
+				</p>
+				<h1 style="position: absolute;color: black;top: 9%;font-size: 1.5rem;left: 5%;font-weight: bold;">
+					Insurance rates change daily.
+				</h1>
+				<h1 style="position: absolute;color: black;top: 14%;font-size: 1.5rem;left: 10%;font-weight: bold;">
+					Stop overpaying!
+				</h1>
+
+				<img id="qr-imeage" src="/mailings/postcards/images/oil_qr_code.jpg" style="position: absolute; bottom: 44%; width: 16%; left: 13%;" alt="QR imeage" >
+
+				<div class="agency_container {% if agent.purl %}purl{% endif %}">
+					{% if agent.purl %}
+						<div class="address" style="">
+							<h1 class="agency_name" style="">
+								The {{ agent.shortname }} {% if not nobreak %}<br>Insurance Agency {% else %} Insurance Agency {% endif %}
+							</h1>
+							<p>
+								{{ agent.address }}<br>	{{ agent.city }}, {{ agent.state }} {{ agent.zip }}<br>{{ agent.email }}
+							</p>
+						</div>
+					{% else %}
+						<div class="address" style="">
+							<h1>
+								The {{ agent.name }} {% if not nobreak %}<br>Insurance Agency {% else %} Insurance Agency {% endif %}
+							</h1>
+							<p>
+								1234 Any St.<br>{{ address }}<br>{{ agent.email }}
+							</p>
+						</div>
+					{% endif %}
+
+					<p id="inner-logo" class="inner-logo {% if agent.purl %}purl{% endif %}" style="">{% include 'logo.twig' %}</p>
+				</div>
+
+				<p id="end-detail-heding">
+					{{ prospect.first_name }} {{ prospect.last_name }}<br>
+					{{ prospect.address }}<br>
+					{% if agent.purl %}
+						{{ agent.city }}, {{ agent.state}} {{ agent.zip }}
+					{% else %}
+						{{ address }}
+					{% endif %}
+				</p>
+			</div>
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+		<br>
+
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+		</div>
+
+	{% endif %}
+</div>{% endblock %}

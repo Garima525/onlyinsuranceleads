@@ -1,0 +1,419 @@
+$machineHeight = 230px;
+$hqParamContainerWidth = 280px;
+$cardWidth = 245px;
+$cardHeight = 206px;
+$paramsHeight = 60px;
+
+.home {
+	.pageHeader {
+		background: linear-gradient(-180deg, rgba(darken($accentColor, 60%), 0.7) 10%, rgba(0,0,0,0.00) 50%);
+		background-size: cover;
+		color: $sectionTitleColor;
+		overflow: hidden;
+		padding-top: 3em;
+		position: relative;
+		text-align: center;
+		margin-top: $mainMenuHeight/2;
+
+		#bg-video {
+			position: absolute;
+			width: 100%;
+			height: auto;
+			z-index: -1;
+			left: 0;
+			top: 0;
+		}
+
+		.hqWide {
+			position: absolute;
+			z-index: 2;
+			bottom: -5px;
+			left: 15%;
+		}
+
+	}
+
+.machineContainer {
+	background: #fff;
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	border-radius: 6px 6px 0 0;
+	height: $machineHeight;
+	position: relative;
+	padding: 14px 0 14px ($hqParamContainerWidth - $cardWidth);
+	+below($small) {
+		display: none;
+	}
+
+	.hqParamContainer {
+		background-image: linear-gradient(-8deg, #EBEBEB 51%, #FFFFFF 100%);
+
+		border: 2px solid #DCDCDC;
+		box-shadow: 0px -4px 17px 0px rgba(0,0,0,0.50);
+		border-radius: 6px 0px 0px 0;
+		width: $hqParamContainerWidth;
+		height: $machineHeight;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 4;
+
+		.agencyInfo {
+			
+			$agentLogoWidth = 70px;
+
+			position: absolute;
+			top: 17px;
+			left: 17px;
+			
+			&:before {
+				content: '';
+				display:block;
+				position: absolute;
+				background: url("../images/header/hqLogo.png") no-repeat top left;
+				background-size: 100% 100%;
+				width: $agentLogoWidth;
+				height: 60px;
+			}
+			
+			&.independent:before {
+				background: url("../images/logos/independent_hq.png") no-repeat top left;
+				background-size: contain;
+				width: 60px;
+				margin-top: 10px;
+			}
+			
+			/*&.farmers:before {
+				background: url("../images/logos/farmers_hq.png") no-repeat top left;
+				background-size: contain;
+				width: 60px;
+				margin-top: 15px;
+			}*/
+			
+			&.allstate:before {
+				background: url("../images/logos/allstate_hq.png") no-repeat top left;
+				background-size: contain;
+				width: 60px;
+				margin-top: 10px;
+			}
+
+			&.american:before {
+				background: url("../images/logos/american_hq.png") no-repeat top left;
+				background-size: contain;
+				width: 60px;
+				margin-top: 10px;
+			}
+
+			&.fbfs:before {
+				background: url("../images/logos/fbfs_hq.png") no-repeat top left;
+				background-size: contain;
+				width: 60px;
+				margin-top: 10px;
+			}
+
+			&.country:before {
+				background: url("../images/logos/country_hq.png") no-repeat top left;
+				background-size: contain;
+				width: 60px;
+				margin-top: 10px;
+			}
+			
+			.agencyName,
+			.agencyMarketingAudience,
+			.agencyZipCodes {
+				padding-left: $agentLogoWidth;
+				text-align: left;
+				font-size: 14px;
+				color: #4f4f4f;
+			}
+			
+			.agencyName {
+				font-size: 14px;
+			}
+			
+			.agencyMarketingAudience {
+				font-size: 10px;
+			}
+			
+			.agencyZipCodes {
+				font-size: 11px;
+				font-weight: bold;
+				
+			}
+		}
+
+		.agencyParams {
+			/*background: url("../images/header/agencyParams.png") no-repeat top left;
+			background-size: 100% 100%;*/
+			
+			background-image: linear-gradient(-180deg, #292929 0%, #4F4F4F 100%);
+			box-shadow: inset -7px 8px 12px 0 rgba(0,0,0,0.50);
+			border-radius: 4px;
+			width: 260px;
+			position: absolute;
+			top: 97px;
+			left: 8px;
+
+			table {
+				width: 100%;
+				margin: 0.8em 0;
+			
+				td:not(:last-child) {
+					border-right: 1px solid rgba(#3E3E3E, 0.9);
+				}
+			}
+
+			.paramName {
+				color: #00ADEE;
+				font-size: 0.65rem;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+
+			.paramValue {
+				color: #fff;
+				font-size: 0.7rem;
+				font-weight: 600;
+				text-align: center;
+			}
+		}
+
+		.hqStats {
+			background: url("../images/header/hqStats.png") no-repeat top left;
+			background-size: 100% 100%;
+			width: 260px;
+			height: 55px;
+			position: absolute;
+			bottom: 4px;
+			left: 8px;
+
+			.renewalMonth {
+				color: #fff;
+				font-size: 0.7rem;
+				font-weight: 600;
+				position: absolute;
+				bottom: 10px;
+				left: 0px;
+				width: 260px;
+				text-align: center;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.hqMachineRight {
+		background:url('../images/header/machineRight.png') no-repeat top left;
+		box-shadow: 0px -4px 17px 0px rgba(0,0,0,0.50);
+		background-size: cover;
+		width: 30px;
+		height: $machineHeight;
+		position: absolute;
+		right: -2px;
+		top: 0;
+		z-index: 3;
+	}
+
+	.machineTrack {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: $machineHeight;
+
+		.card {
+			perspective:3000;
+			position: relative;
+
+			.cardContainer{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: $cardWidth;
+				height: $cardHeight;
+			}
+
+			.details,
+			.calculating {
+				color: #fff;
+				padding-left: 1rem;
+				position: absolute;
+				bottom: $paramsHeight + 10;
+				left: 0;
+				text-align: left;
+				text-shadow: 0px 2px 4px rgba(0,0,0,0.80);
+
+				.name {
+					font-size: 0.9rem;
+					font-weight: bold;
+				}
+
+				.address, .location {
+					font-size: 0.8rem;
+				}
+
+				&.calculating {
+					opacity: 0;
+				}
+			}
+
+			.details {
+				bottom: $paramsHeight;
+				background: linear-gradient(to top, #000000, rgba(0,0,0,0));
+				padding-bottom: 10px;
+				width: 100%;
+			}
+
+			.mask {
+				background: rgba(#000, 0.5);
+				border-radius: 4px;
+				opacity: 0;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: $cardWidth;
+				height: $cardHeight;
+				z-index:1;
+			}
+
+			.frontContainer, .back {
+				backface-visibility: hidden;
+				-webkit-backface-visibility: hidden;
+				background: #fff;
+				border-radius: 4px;
+				height: $cardHeight;
+				width: $cardWidth;
+				shadow(2);
+				overflow: hidden;
+				position: absolute;
+				left: 0;
+				transform-style:"preserve-3d";
+			}
+
+			.frontContainer {
+				perspective:800;
+				background: #fff;
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: top center;
+				transform: rotateY(0);
+			}
+
+			for num in (0..8) {
+				&.card{num} .frontContainer {
+					background-image: url('../images/header/home'+num+'.jpg');
+				}
+			}
+
+			.front {
+				width: $cardWidth;
+				height: $cardHeight;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 2;
+			}
+
+
+			.back {
+				background: #fff;
+				font-size: 0.7em;
+				text-align: left;
+				//opacity: 0;
+				padding: 1rem;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: $cardWidth;
+				height: $cardHeight;
+				z-index:4;
+				transform: rotateY(0);
+
+				.coverageTitle,
+				.premiumTitle {
+					color: $accentColor;
+					font-weight: bold;
+					text-align: center;
+				}
+				
+
+				.rates {
+					font-size:0.68rem;
+					font-weight: bold;
+					margin: 1em auto 0.5em auto;
+					width: 100%;
+
+					.coverageValue {
+						padding-left: 0.15em;
+						color: darken($accentColor2, 20%);
+					}
+				}
+
+				.premiumValue {
+					color: darken($accentColor2, 20%);
+					font-size: 1rem;
+					text-align: center;
+				}
+
+			}
+
+			.printedLetter {
+				opacity: 1;
+				position: absolute;
+				top: 0;
+				left: 0;
+				text-align: center;
+				padding-top: 10px;
+				width: $cardWidth;
+				height: $cardHeight;
+				clip:rect(0 $cardWidth $cardHeight 0);
+			}
+
+			.params {
+				background: #fff;
+				border-radius: 0 0 4px 4px;
+				box-sizing: border-box;
+				color: #333;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: $cardWidth;
+				height: $paramsHeight;
+
+				.row {
+					padding-top: 10px;
+					width: 95%;
+					margin: 0 auto;
+				}
+
+				.paramItem {
+					.paramValue {
+						display: block;
+						font-size: 0.9rem;
+						font-weight: bold;
+					}
+
+					.paramLabel {
+						display: block;
+						font-size: 0.6rem;
+						text-transform: uppercase;
+					}
+
+					&.paramCredit {
+						padding-right: 10px;
+						padding-left: 10px;
+
+						.paramValue {
+							font-size:0.75em;
+							padding-top: 3px;
+						}
+					}
+
+					&.year {
+						border-left: 1px solid #ddd;
+						border-right: 1px solid #ddd;
+					}
+				}
+			}
+		}
+	}
+}
+}
+

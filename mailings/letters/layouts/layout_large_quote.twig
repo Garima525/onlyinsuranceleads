@@ -1,0 +1,14 @@
+{% set templateClass = "letterTemplate letterTextImageSplit" %}
+{% extends "layout_base.twig" %}
+{% block content %}
+	<div class="top">
+		{% include 'letter_top.twig' %}
+	</div>
+	<div class="middle">
+		{% include 'image_text_split.twig' %}
+		{% include 'quote.twig' %}
+	</div>
+	<div class="bottom">
+		{% include 'call_now.twig' %}
+	</div>
+{% endblock %}

@@ -1,0 +1,42 @@
+				<div class="col-6 left back">
+					<div class="postcardBackLogo">
+						{% if agent.purl %}
+							{% include 'logo-light.twig' %}
+						{% else %}
+							<img src="/mailings/images/logos/genericLogo-light.svg" class="logo">
+						{% endif %}
+					</div>
+					<div class="companyContainer">{% include 'company.twig' %}</div>
+					<div class="postcardBackAddress">
+						{% if agent.purl %}
+							<div>{{ agent.address }}</div>
+							<div>{{ agent.city }}, {{ agent.state }} {{ agent.zip }}</div>
+						{% else %}
+							<div>1234 Any Street</div>
+							<div>{{ address }}</div>
+						{% endif %}
+						<div>Phone: {{ agent.phone }}</div>
+						<div class="agent-email">{{ agent.email }}</div>
+		   			</div>
+				</div>
+				<div class="col-6 right back">
+					<div class="grid companyContainer">
+					</div>
+						
+					<div class="bodyText">
+						<p class="ins_i">Insurance rates change daily.<br>Stop overpaying!</p>
+						<p class="call_b"><span class="topText">Call today to lock in a better rate!</span><br /><span class="phone">{{ agent.phone }}</span>
+							<img class="red-bars" src="/mailings/images/red-bars.svg" />
+						</p>
+						<p style="position:relative; z-index:-1;">Insurance rates change daily, which probably means you're overpaying. 2019 is the year to shop your home insurance!
+						Don't wait! Call us now at 
+						<span class="note">{{ agent.phone }}</span> and lock in a better rate today!
+						</p>
+					</div>
+				</div>
+				<div class="disclaimerText">This is merely a proposal and not a policy of insurance or offer to insure. The company reserves the right
+				<br>to accept, reject or modify this proposal after investigation, review of the application and review of all other
+				<br>underwriting information. Your rate could vary based on differences in your home, your age and other factors.</div>
+				<div class="mailtoAddress">
+					{% include 'mailto.twig' %}
+				</div>

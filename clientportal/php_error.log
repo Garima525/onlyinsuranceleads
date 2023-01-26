@@ -1,0 +1,2 @@
+[22-Jan-2023 22:04:03 UTC] PHP Warning:  require_once(/home/c24rwrjltlz8/public_html/clientportal/../../config-insuranceleads.php): failed to open stream: No such file or directory in /home/c24rwrjltlz8/public_html/clientportal/index.php on line 2
+[22-Jan-2023 22:04:03 UTC] PHP Fatal error:  require_once(): Failed opening required '/home/c24rwrjltlz8/public_html/clientportal/../../config-insuranceleads.php' (include_path='.:/opt/alt/php73/usr/share/pear') in /home/c24rwrjltlz8/public_html/clientportal/index.php on line 2
