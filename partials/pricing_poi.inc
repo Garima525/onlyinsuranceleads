@@ -33,7 +33,7 @@
 			</div>
 		</div>-->
 		<div class="embed-responsive embed-responsive-ratio">
-			<iframe src="/mailings/mailing.php?id=6&type=postcard&location=Amsterdam, Noord-Holland, NL, 1105" id="letterPreview2" class="letterFrame" seamless="seamless" scrolling="no" frameborder="0"></iframe>
+			<iframe src="../mailings/mailing.php?id=6&type=postcard&location=Amsterdam, Noord-Holland, NL, 1105" id="letterPreview2" class="letterFrame" seamless="seamless" scrolling="no" frameborder="0"></iframe>
 		</div>
 	</div>
 
@@ -58,11 +58,11 @@
 		<!-- List group -->
 		<h4 class="areaTitle">Payment Options</h4>
 		<div class="paymentOptions">
-			<img src="images/payment/check.png" class="paymentType selected" data-payment="check">
-			<img src="images/payment/visa.png" class="paymentType" data-payment="visa">
-			<img src="images/payment/mastercard.png" class="paymentType" data-payment="mastercard">
-			<img src="images/payment/amex.png" class="paymentType" data-payment="amex">
-			<img src="images/payment/discover.png" class="paymentType" data-payment="discover">
+			<img src="../images/payment/check.png" class="paymentType selected" data-payment="check">
+			<img src="../images/payment/visa.png" class="paymentType" data-payment="visa">
+			<img src="../images/payment/mastercard.png" class="paymentType" data-payment="mastercard">
+			<img src="../images/payment/amex.png" class="paymentType" data-payment="amex">
+			<img src="../images/payment/discover.png" class="paymentType" data-payment="discover">
 		</div>
 		<div class="row printOptions">
 			<div class="small-12 medium-6 columns filters">
