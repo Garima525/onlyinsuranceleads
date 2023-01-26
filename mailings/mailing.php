@@ -1,6 +1,6 @@
 <?php    
-  require_once($_SERVER['DOCUMENT_ROOT'] . '/utils/twig.php');
-  require_once($_SERVER['DOCUMENT_ROOT'] . '/utils/templateUtils.php');
+  require_once('../utils/twig.php');
+  require_once('../utils/templateUtils.php');
   require_once('prospects.php');
   $id = $_GET['id'];
   $type = $_GET['type'];
@@ -14,9 +14,9 @@
   if (preg_match('/MSIE (\d+\.\d+);/', $agent_browser)) {
     echo "<link rel='stylesheet' href='https://onlyinsuranceleads.com/css/ie.css' media='all' />";
   } elseif (preg_match('/Windows NT (\d+\.\d+);/', $agent_browser)) {
-    echo "<link rel='stylesheet' href='/css/ie.css' media='all' />";
+    echo "<link rel='stylesheet' href='../css/ie.css' media='all' />";
   } elseif (preg_match('/Edge\/\d+/', $agent_browser)) {
-    echo "<link rel='stylesheet' href='/css/edge.css' media='print, screen' />";
+    echo "<link rel='stylesheet' href='../css/edge.css' media='print, screen' />";
   }
 
   if ($type != "letter") {

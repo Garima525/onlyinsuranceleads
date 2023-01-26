@@ -3,10 +3,10 @@
 	$database = new medoo([
 		// required
 		'database_type' => 'mysql',
-		'database_name' => 'db93816_agents',
-		'server' => 'internal-db.s93816.gridserver.com',
-		'username' => 'db93816',
-		'password' => '}7v?Sd{7efA',
+		'database_name' => 'onlyinsuranceleads',
+		'server' => 'localhost',
+		'username' => 'onlyinsuranceleads',
+		'password' => '5a*/Dj-cTXS[k)u!',
 		'charset' => 'utf8',
 		// [optional]
 		//'port' => 3306,

@@ -1,7 +1,7 @@
 <?php
 // $agent = false;
 // require_once "../../lib/PHPMailer/PHPMailerAutoload.php";
-require_once "../lib/PHPMailer/PHPMailerAutoload.php";
+require_once "lib/PHPMailer/PHPMailerAutoload.php";
 // $agent = unserialize(base64_decode($_REQUEST['agent']));
 // if(!isset($_REQUEST['debug'])) {
 //     if(isset($_REQUEST['agent'] )) {

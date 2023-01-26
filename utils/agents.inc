@@ -2,7 +2,7 @@
 	$isDebug = false;
 	$apiKey = 'AIzaSyAI5S-ScEMYCPkcNEp-KP7t6nfJJ-aJwdc';
 	date_default_timezone_set('America/Phoenix');
-	require($_SERVER['DOCUMENT_ROOT'] . '/../lib/db.inc');
+	require('lib/db.inc');
 
 	if(isset($_REQUEST['debug'])) {
 		$isDebug = true;
@@ -160,7 +160,7 @@
 
 	function getTemplateImage($num, $size="full") {
 		global $agent;
-		$baseDir = 'images/templates';
+		$baseDir = '../images/templates';
 
 		if($agent) {
 			$imgSrc = '/utils/templateImage.php?template='.$num.'&agent='.base64_encode(serialize($agent)).'&size='.$size;
