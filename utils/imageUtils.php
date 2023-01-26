@@ -1,6 +1,6 @@
 <?php
     // Utils
-    require_once('../../lib/kus/PHPImage.php');
+    require_once('../lib/kus/PHPImage.php');
 
     const LOGODIR = "../images/templates/logos/";
 

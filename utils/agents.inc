@@ -163,7 +163,7 @@
 		$baseDir = '../images/templates';
 
 		if($agent) {
-			$imgSrc = '/utils/templateImage.php?template='.$num.'&agent='.base64_encode(serialize($agent)).'&size='.$size;
+			$imgSrc = 'utils/templateImage.php?template='.$num.'&agent='.base64_encode(serialize($agent)).'&size='.$size;
 		} else {
 			$imgSrc = $baseDir.'/generic/template_'.$num.'.png';
 		}
@@ -177,9 +177,9 @@
 
 		if($agent) {
 			if($subType=='postcard'){
-				$imgSrc = '/utils/envelopeImageTop.php?&type=printProduction&subType=postcard&agent='.base64_encode(serialize($agent));
+				$imgSrc = 'utils/envelopeImageTop.php?&type=printProduction&subType=postcard&agent='.base64_encode(serialize($agent));
 			}else{
-				$imgSrc = '/utils/envelopeImageTop.php?&type=printProduction&subType=letter&agent='.base64_encode(serialize($agent));
+				$imgSrc = 'utils/envelopeImageTop.php?&type=printProduction&subType=letter&agent='.base64_encode(serialize($agent));
 			}
 		} else {
 			if($subType=='postcard'){
@@ -196,9 +196,9 @@
 		global $agent;
 		$imageDir = "images";
 		if($agent) {
-			$imgSrc = '/utils/envelopeImage.php?&type=envelope&agent='.base64_encode(serialize($agent));
+			$imgSrc = 'utils/envelopeImage.php?&type=envelope&agent='.base64_encode(serialize($agent));
 		}else {
-			$imgSrc = '/utils/dummyImage.php';
+			$imgSrc = 'utils/dummyImage.php';
 			// $imgSrc = $imageDir.'/header/printedLetter.png';
 		}
 		return $imgSrc;
