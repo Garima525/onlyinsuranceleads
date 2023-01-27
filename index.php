@@ -5,10 +5,9 @@ $(document).ready(function(){
   $.getJSON("https://api.ipify.org?format=json", function(data) {
   	console.log('hGHTh')
     var ip = data.ip;
-    setTimeout(function() {
-        var setSession = sessionStorage.setItem("userIp", ip);
-    }, 1000);
-        
+    
+	var setSession = sessionStorage.setItem("userIp", ip);
+      
     //var getSession = sessionStorage.getItem("userIp");
 
     //alert(getSession);
