@@ -1,6 +1,6 @@
 <?php
 namespace Mobilyte\Tools;
-
+session_start();
 ini_set('allow_url_fopen', 1);
 class LocationData {
   public function __construct() {
@@ -37,7 +37,7 @@ class LocationData {
     // } else if (! empty($_SERVER['REMOTE_ADDR'])) {
     //     $ip = $_SERVER['REMOTE_ADDR'];
     // }
-    //echo $ip;
+    echo $ip;
     
     return $ip;
 
@@ -86,15 +86,5 @@ class LocationData {
     }
 }
 ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-		$(document).ready(function(){
-		$.getJSON("https://api.ipify.org?format=json", function(data) {
-				var ip = data.ip;
-				document.cookie = 'userIp='+ip;
-			});
-			
-		});
-</script>
 
 
