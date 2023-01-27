@@ -6,9 +6,7 @@ $(document).ready(function(){
   	console.log('hGHTh')
     var ip = data.ip;
     var setSession = sessionStorage.setItem("userIp", ip);
-
-    
-    //var getSession = sessionStorage.getItem("userIp");
+    var getSession = sessionStorage.getItem("userIp");
 
     //alert(getSession);
     //document.cookie = 'userIp='+ip;
