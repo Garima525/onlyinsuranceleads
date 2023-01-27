@@ -5,8 +5,11 @@ $(document).ready(function(){
   $.getJSON("https://api.ipify.org?format=json", function(data) {
   	console.log('hGHTh')
     var ip = data.ip;
-    var setSession = sessionStorage.setItem("userIp", ip);
-    var getSession = sessionStorage.getItem("userIp");
+    setTimeout(function() {
+        var setSession = sessionStorage.setItem("userIp", ip);
+    }, 1000);
+        
+    //var getSession = sessionStorage.getItem("userIp");
 
     //alert(getSession);
     //document.cookie = 'userIp='+ip;
