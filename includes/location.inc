@@ -11,7 +11,7 @@ class LocationData {
     //$ip = $_COOKIE['userIp'];
     $ip = "<script>setTimeout(function() {
         document.write(sessionStorage.getItem('userIp'));
-        }, 2000);
+        }, 3000);
         </script>";
     // Get real visitor IP behind CloudFlare network
     //$ip = '';
