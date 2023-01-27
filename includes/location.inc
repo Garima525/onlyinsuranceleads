@@ -9,10 +9,7 @@ class LocationData {
 
   public function getUserIP() {
     //$ip = $_COOKIE['userIp'];
-    $ip = "<script>setTimeout(function() {
-        document.write(sessionStorage.getItem('userIp'));
-        }, 3000);
-        </script>";
+    $ip = "<script>document.write(sessionStorage.getItem('userIp'));</script>";
     // Get real visitor IP behind CloudFlare network
     //$ip = '';
     // if (! empty($_SERVER['HTTP_CLIENT_IP'])) {
