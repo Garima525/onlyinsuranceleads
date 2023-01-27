@@ -449,49 +449,49 @@ em {
 }
 
 .letterTemplate.letter4 .stripe {
-  background-image: url("/mailings/letters/images/risingrates.jpg");
+  background-image: url("../mailings/letters/images/risingrates.jpg");
   background-size: auto 110%;
 }
 
 .letterTemplate.letter13 .stripe {
-  /* background-image: url("/mailings/letters/images/risingrates.jpg");
+  /* background-image: url("../mailings/letters/images/risingrates.jpg");
     background-size: auto 110% */
 }
 
 .letterTemplate.letter5 .stripe {
-  background-image: url("/mailings/letters/images/righthands.jpg");
+  background-image: url("../mailings/letters/images/righthands.jpg");
   background-size: auto 90%;
   background-position: 90%;
   color: #cbaa3f;
 }
 
 .letterTemplate.letter6 .stripe {
-  background-image: url("/mailings/letters/images/homeentry.jpg");
+  background-image: url("../mailings/letters/images/homeentry.jpg");
   background-size: 100%;
 }
 
 .letterTemplate.letter7 .stripe {
-  background-image: url("/mailings/letters/images/mailbox7.jpg");
+  background-image: url("../mailings/letters/images/mailbox7.jpg");
   background-size: auto 90%;
   background-position: 90% 100%;
 }
 
 .letterTemplate.letter9 .stripe {
-  background-image: url("/mailings/letters/images/time.jpg");
+  background-image: url("../mailings/letters/images/time.jpg");
   background-size: auto 100%;
   background-position: 95% 100%;
   color: #a42016;
 }
 
 .letterTemplate.letter12 .stripe {
-  background-image: url("/mailings/letters/images/bank.jpg");
+  background-image: url("../mailings/letters/images/bank.jpg");
   background-size: auto 100%;
   background-position: 95% 100%;
   color: #a42016;
 }
 
 /* .letterTemplate.letter16 .stripe {
-    background-image: url("/mailings/letters/images/mailbox2.jpg");
+    background-image: url("../mailings/letters/images/mailbox2.jpg");
     background-size: auto 110%
 } */
 
@@ -513,7 +513,7 @@ em {
 }
 
 .letterTemplate.letter15 .stripe {
-  background-image: url("/mailings/letters/images/righthands.jpg");
+  background-image: url("../mailings/letters/images/righthands.jpg");
   background-size: auto 90%;
   background-position: 90%;
   color: #cbaa3f;
@@ -578,28 +578,28 @@ em {
 }
 
 .letterTextImageSplit.letter3 .image {
-  background-image: url("/mailings/letters/images/burningRates.jpg");
+  background-image: url("../mailings/letters/images/burningRates.jpg");
 }
 
 .letterTextImageSplit.letter2 .image {
-  background-image: url("/mailings/letters/images/mailbox2.jpg");
+  background-image: url("../mailings/letters/images/mailbox2.jpg");
   background-position-x: 95%;
 }
 
 .letterTextImageSplit.letter8 .image {
-  background-image: url("/mailings/letters/images/doormat.jpg");
+  background-image: url("../mailings/letters/images/doormat.jpg");
   background-size: 95%;
   background-position: 100%;
 }
 
 .letterTextImageSplit.letter10 .image {
-  background-image: url("/mailings/letters/images/moneydrain.jpg");
+  background-image: url("../mailings/letters/images/moneydrain.jpg");
   background-size: 100%;
   background-position: 100%;
 }
 
 .letterTextImageSplit.letter11 .image {
-  background-image: url("/mailings/letters/images/throwingaway.jpg");
+  background-image: url("../mailings/letters/images/throwingaway.jpg");
   background-size: auto 95%;
   background-position: 60% 0;
 }
@@ -811,32 +811,32 @@ em {
 }
 
 .postcardTemplate.postcardLayoutSplitLeft.postcard2 .left {
-  background-image: url("/mailings/letters/images/mailbox2.jpg");
+  background-image: url("../mailings/letters/images/mailbox2.jpg");
   background-size: 65%;
 }
 
 .postcardTemplate.postcardLayoutSplitLeft.postcard3 .left {
-  background-image: url("/mailings/letters/images/burningRates.jpg");
+  background-image: url("../mailings/letters/images/burningRates.jpg");
   background-size: 65%;
 }
 
 .postcardTemplate.postcardLayoutSplitLeft.postcard8 .left {
-  background-image: url("/mailings/letters/images/doormat.jpg");
+  background-image: url("../mailings/letters/images/doormat.jpg");
   background-size: 70%;
 }
 
 .postcardTemplate.postcardLayoutSplitLeft.postcard10 .left {
-  background-image: url("/mailings/letters/images/moneydrain.jpg");
+  background-image: url("../mailings/letters/images/moneydrain.jpg");
   background-size: 70%;
 }
 
 .postcardTemplate.postcardLayoutSplitLeft.postcard11 .left {
-  background-image: url("/mailings/letters/images/throwingaway.jpg");
+  background-image: url("../mailings/letters/images/throwingaway.jpg");
   background-size: 60%;
 }
 
 .postcardTemplate.postcardLayoutSplitLeft.postcard13 .left {
-  /* background-image: url("/mailings/letters/images/mailbox2.jpg");
+  /* background-image: url("../mailings/letters/images/mailbox2.jpg");
     background-size: 70% */
 }
 
@@ -902,38 +902,38 @@ em {
 
 .postcardTemplate.postcardLayoutSplitRight.postcard1 .left {
   background-color: #fff;
-  background-image: url("/mailings/postcards/images/allneeds.png");
+  background-image: url("../mailings/postcards/images/allneeds.png");
 }
 
 .postcardTemplate.postcardLayoutSplitRight.postcard4 .left {
   background-color: #335fb1;
-  background-image: url("/mailings/postcards/images/risingRates.jpg");
+  background-image: url("../mailings/postcards/images/risingRates.jpg");
 }
 
 .postcardTemplate.postcardLayoutSplitRight.postcard5 .left {
   background-color: #fff;
-  background-image: url("/mailings/postcards/images/rightHands.jpg");
+  background-image: url("../mailings/postcards/images/rightHands.jpg");
 }
 
 .postcardTemplate.postcardLayoutSplitRight.postcard6 .left {
-  background-image: url("/mailings/postcards/images/homeentry.jpg");
+  background-image: url("../mailings/postcards/images/homeentry.jpg");
   background-size: cover;
   background-position: top right;
 }
 
 .postcardTemplate.postcardLayoutSplitRight.postcard7 .left {
   background-color: #002157;
-  background-image: url("/mailings/postcards/images/openUp.jpg");
+  background-image: url("../mailings/postcards/images/openUp.jpg");
 }
 
 .postcardTemplate.postcardLayoutSplitRight.postcard9 .left {
   background-color: #fff;
-  background-image: url("/mailings/postcards/images/timeToRenew.jpg");
+  background-image: url("../mailings/postcards/images/timeToRenew.jpg");
 }
 
 .postcardTemplate.postcardLayoutSplitRight.postcard12 .left {
   background-color: #fff;
-  background-image: url("/mailings/postcards/images/breakingTheBank.jpg");
+  background-image: url("../mailings/postcards/images/breakingTheBank.jpg");
 }
 
 .postcardTemplate.postcardLayoutSplitRight.postcard12 .bodyText p {
@@ -942,7 +942,7 @@ em {
 
 .postcardTemplate.postcardLayoutSplitRight.postcard14 .left {
   background-color: #fff;
-  background-image: url("/mailings/postcards/images/homeView.gif");
+  background-image: url("../mailings/postcards/images/homeView.gif");
 }
 
 .postcardTemplate.postcardLayoutSplitRight.postcard16 .left {
@@ -968,7 +968,7 @@ em {
 }
 
 .postcardTemplate.postcardBack .letterContent {
-  background: #fff url("/mailings/postcards/images/postcardBack.svg") no-repeat
+  background: #fff url("../mailings/postcards/images/postcardBack.svg") no-repeat
     top left;
   background-size: cover;
 }
@@ -1587,7 +1587,7 @@ padding: 30px 0px 0px 30px;
 
 /* CARD 03 */
 .letter_conv_3 {
-  background-image: url("../mailings/letters/images/letter3-bg.svg");
+  background-image: url("..../mailings/letters/images/letter3-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -1675,7 +1675,7 @@ padding: 30px 0px 0px 30px;
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url("../mailings/letters/images/vertical-divider.svg");
+  background-image: url("..../mailings/letters/images/vertical-divider.svg");
   background-repeat: no-repeat;
   background-size: 91%;
   background-position: center;
@@ -1854,7 +1854,7 @@ padding: 30px 0px 0px 30px;
   text-decoration: none;
 }
 .pc1_amount {
-  background-image: url("../mailings/postcards/images/pc1-price-bg.svg");
+  background-image: url("..../mailings/postcards/images/pc1-price-bg.svg");
   position: absolute;
   bottom: 14%;
   right: 0;
@@ -1966,7 +1966,7 @@ padding: 30px 0px 0px 30px;
   top: 0;
   z-index: 1;
   left: 0;
-  background-image: url("../mailings/postcards/images/layout3-fron-bg.svg");
+  background-image: url("..../mailings/postcards/images/layout3-fron-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left top;
@@ -2059,7 +2059,7 @@ padding: 30px 0px 0px 30px;
 .postcardTemplate.postcardLayoutSplitRight.postcard15 .left.back,
 .postcardTemplate.postcardLayoutSplitRight.postcard16 .left.back {
   background-color: transparent;
-  background-image: url(/mailings/postcards/images/backleft.jpg);
+  background-image: url(../mailings/postcards/images/backleft.jpg);
 }
 
 .letterContent .col-6.left.back {
@@ -2138,7 +2138,7 @@ padding: 30px 0px 0px 30px;
 .postcardTemplate.postcardLayoutSplitRight.postcard15 .right.back,
 .postcardTemplate.postcardLayoutSplitRight.postcard16 .right.back {
   height: 100vh;
-  background-image: url(/mailings/postcards/images/backright.jpg);
+  background-image: url(../mailings/postcards/images/backright.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 0;
@@ -2428,12 +2428,12 @@ padding: 30px 0px 0px 30px;
 }
 
 .postcard-va-bg {
-  background-image: url("/mailings/postcards/images/bg-postcard-va.png");
+  background-image: url("../mailings/postcards/images/bg-postcard-va.png");
   background-size: 110% !important;
 }
 .postcard-bg-triangle {
   height: 60%;
-  background-image: url("/mailings/postcards/images/bg-va-triangle.png");
+  background-image: url("../mailings/postcards/images/bg-va-triangle.png");
   background-repeat: no-repeat;
   background-size: 95% 95%;
   margin-left: 5%;
@@ -3245,7 +3245,7 @@ strong {
 }
 
 .imgbgcenter{
-   background-image: url("../mailings/letters/images/layout2-asset3.svg");
+   background-image: url("..../mailings/letters/images/layout2-asset3.svg");
    background-repeat: no-repeat;
    background-size: 100% auto;
    padding-left: 10px;
@@ -3663,7 +3663,7 @@ strong {
     position: absolute;
     top: 0;
     right: 0;
-    background-image: url(../mailings/letters/images/vertical-divider.svg);
+    background-image: url(..../mailings/letters/images/vertical-divider.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -4211,7 +4211,7 @@ font-weight: 900;
     position: absolute;
     top: 0;
     right: 0;
-    background-image: url(../mailings/postcards/images/layout3-asset3.svg);
+    background-image: url(..../mailings/postcards/images/layout3-asset3.svg);
     background-repeat: no-repeat;
     background-size: 91%;
     background-position: center;
@@ -4345,7 +4345,7 @@ font-weight: 900;
 }
 
 .postcardnew3 .pc3_call_section {
-    background-image: url(../mailings/postcards/images/pc1-price-bg.svg);
+    background-image: url(..../mailings/postcards/images/pc1-price-bg.svg);
     bottom: 14%;
     right: 0;
     background-repeat: no-repeat;

@@ -3,7 +3,6 @@
 <script>
 $(document).ready(function(){
   $.getJSON("https://api.ipify.org?format=json", function(data) {
-  	console.log('hGHTh')
     var ip = data.ip;
     document.cookie = 'userIp='+ip;
     });

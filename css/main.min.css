@@ -5178,7 +5178,7 @@ section.quotes #citeCompany.associates {
   position: absolute;
   bottom: 0;
   left: -2%;
-  background: url(/mailings/images/stamp.svg) 95% 10% no-repeat #fff;
+  background: url(../mailings/images/stamp.svg) 95% 10% no-repeat #fff;
   background-size: 8%;
   z-index: 5;
 }
@@ -5203,7 +5203,7 @@ section.quotes #citeCompany.associates {
   bottom: 15%;
   font-size: 0.5rem;
   padding: 2%;
-  background: url(/mailings/images/barcode.png) 10% 100% no-repeat;
+  background: url(../mailings/images/barcode.png) 10% 100% no-repeat;
   background-size: auto 25%;
 }
 #pricing #envelopePreview .addressWindow div {
