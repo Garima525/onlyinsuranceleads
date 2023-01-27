@@ -102,7 +102,7 @@ $(function(){
 });
 
 function updateQueryStringParameter(uri, key, value) {
-	console.log(uri);
+	//console.log(uri);
   var re = new RegExp("([?&])" + key + "=.*?(&|#|$)", "i");
   if( value === undefined ) {
   	if (uri.match(re)) {
