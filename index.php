@@ -2,8 +2,9 @@
 <script>
 		$(document).ready(function(){
 		$.getJSON("https://api.ipify.org?format=json", function(data) {
-			var ip = data.ip;
-			document.cookie = 'userIp='+ip;
+				var ip = data.ip;
+				document.cookie = 'userIp='+ip;
+				window.location.reload();
 			});
 		});
 </script>
