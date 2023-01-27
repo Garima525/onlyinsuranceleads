@@ -5,13 +5,7 @@ $(document).ready(function(){
   $.getJSON("https://api.ipify.org?format=json", function(data) {
   	console.log('hGHTh')
     var ip = data.ip;
-    
-	var setSession = sessionStorage.setItem("userIp", ip);
-      
-    //var getSession = sessionStorage.getItem("userIp");
-
-    //alert(getSession);
-    //document.cookie = 'userIp='+ip;
+    document.cookie = 'userIp='+ip;
     });
 });
 </script>

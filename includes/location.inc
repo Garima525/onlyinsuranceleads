@@ -1,6 +1,5 @@
 <?php
 namespace Mobilyte\Tools;
-session_start();
 ini_set('allow_url_fopen', 1);
 class LocationData {
   public function __construct() {
@@ -9,17 +8,11 @@ class LocationData {
 
   public function getUserIP() {
     //$ip = $_COOKIE['userIp'];
-    $ip = "<script>setTimeout(function() {
-        document.write(sessionStorage.getItem('userIp'));
-        }, 3000);
-        </script>";
-    if(!isset($ip)){
-        //echo "Cookie named '" . $ip . "' is not set!";
-        $delay = 3000; 
-        header("Refresh: $delay;");
-        } else {
-        //echo "Cookie '" . $ip . "' is set!<br>";
-        //echo "Value is: " .$_COOKIE['userIp'] ;
+    $ip = $_COOKIE['userIp'];
+    if(!isset($ip)) { 
+        header("Refresh: 1;");
+    } 
+    else {  
     }
     
     // Get real visitor IP behind CloudFlare network
