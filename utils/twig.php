@@ -1,6 +1,6 @@
 <?php
-	require_once('/vendor/autoload.php');
-	$base = '/mailings/';
+	require_once('../vendor/autoload.php');
+	$base = '../mailings/';
 	$components = $base . '/components/';
 	$mailingsLetterLayouts = $base . '/letters/layouts/';
 	$mailingsLetters = $base . '/letters/';

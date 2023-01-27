@@ -10,7 +10,7 @@ class LocationData {
     //$ip = $_COOKIE['userIp'];
     $ip = $_COOKIE['userIp'];
     if(!isset($ip)) { 
-        header("Refresh: 1;");
+        header("Refresh: 0.8;");
     } 
     else {  
     }
